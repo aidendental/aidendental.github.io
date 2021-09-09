@@ -66,6 +66,17 @@ ul {
   object-fit: cover;
 }
 
+
+/*************비디오**************/
+.video-player{
+  width: 100%;
+  font-size: 0; /*비디오 사이 간격 없애기 위해 추가한 거라 지우시면 안돼요 !*/
+}
+
+video{
+  width: 100%;
+}
+
 /********** 팝업(모달) ***********/
 #modal.modal-overlay {
   width: 100%;
@@ -125,4 +136,37 @@ ul {
   padding: 0px 10px;
   text-shadow: 1px 1px 2px gray;
   color: white;
+}
+
+/*************진료과목**************/
+
+.treatment-subject{
+  background-color: white;
+  display:grid;
+  grid-template-columns: 20em 1fr;
+}
+
+#treatment-subject-text{
+  width :80rem;
+  padding: 3em 0 0 3em;
+}
+
+#treatment-subject-text span{
+  color: #151515;
+  font-size: x-large;
+  font-weight: 100;
+}
+#treatment-subject-text h2 span{
+  color: #151515;
+  font-size:large;
+  font-weight: 100;
+}
+
+.carousel-item{
+  background-color: #eeeeee;
+  height: 30rem;
+}
+
+.carousel-item img{
+  object-fit: cover;
 }
