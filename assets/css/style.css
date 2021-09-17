@@ -41,8 +41,6 @@ a {
 
 ul {
   list-style: none;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .main-header {
@@ -60,7 +58,20 @@ ul {
   font-size: 1.23rem;
   font-weight: 400;
 }
- 
+
+#quick-menu {
+  font-size: 1.23rem;
+  font-weight: 400;
+}
+
+.right{
+  margin-left: auto;
+}
+
+.vertical-middle{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
 
 /************ 언어 선택 ************/
