@@ -2327,7 +2327,6 @@ ol li {
 ul {
   list-style: disc;
   margin: 0 0 2em 0;
-  padding-left: 1em;
 }
 
 ul li {
@@ -3246,13 +3245,8 @@ button:disabled,
   font-size: 0.8em;
   height: inherit;
   line-height: inherit;
-  padding: 0 0.75em;
   position: relative;
   vertical-align: middle;
-}
-
-#header nav a:last-child {
-  padding-right: 1.5em;
 }
 
 #header nav a[href="#menu"] {
