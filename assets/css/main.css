@@ -3223,14 +3223,6 @@ button:disabled,
 }
 
 #header nav {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -moz-flex-grow: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
-  flex-grow: 1;
   height: inherit;
   line-height: inherit;
 }
@@ -3242,7 +3234,6 @@ button:disabled,
   height: inherit;
   line-height: inherit;
   position: relative;
-  vertical-align: middle;
 }
 
 #header nav a[href="#menu"] {
