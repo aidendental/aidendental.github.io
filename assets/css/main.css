@@ -3227,10 +3227,6 @@ button:disabled,
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  -moz-justify-content: -moz-flex-end;
-  -webkit-justify-content: -webkit-flex-end;
-  -ms-justify-content: -ms-flex-end;
-  justify-content: flex-end;
   -moz-flex-grow: 1;
   -webkit-flex-grow: 1;
   -ms-flex-grow: 1;
