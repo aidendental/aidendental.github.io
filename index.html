@@ -25,6 +25,11 @@
   <noscript>
     <link rel="stylesheet" href="assets/css/noscript.css" />
   </noscript>
+
+
+  <!-- 네이버 지도 -->
+  <script type="text/javascript"
+    src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=YOUR_CLIENT_ID"></script>
 </head>
 
 <body class="is-preload">
@@ -122,9 +127,6 @@
             <div class="carousel-item active">
               <!--<img class="d-block w-100" src="images/index_banner_02.png" alt="임플란트" />-->
               <div>
-                <a href="implant.html">
-                  <img src="images/logo.svg" alt="임플란트">
-                </a>
                 <h3>튼튼한 임플란트</h3>
                 <h4>최소절개, 최소통증, 빠른회복</h4>
                 <span>풍부한 임상경험으로 빠르고 정확하게 수술합니다.</span>
@@ -165,105 +167,99 @@
       </section>
     </section>
 
-    <!-- Two -->
-    <section id="two">
+    <!-- Map -->
+    <div id="map" style="width:100%;height:400px;"></div>
+
+    <script>
+      var mapOptions = {
+        center: new naver.maps.LatLng(37.51005, 127.04414),
+        zoom: 10
+      };
+
+      var map = new naver.maps.Map('map', mapOptions);
+    </script>
+
+    <!-- Contact -->
+    <section id="contact">
       <div class="inner">
-        <header class="major">
-          <h2>전화상담 및 진료 예약</h2>
-        </header>
-        <p>(02) 539-2112</p>
-        <br />
-        <p>fsdfa</p>
-        <ul class="actions">
-          <li>
-            <a href="landing.html" class="button next">Get Started</a>
-          </li>
-        </ul>
+        <section>
+          <form method="post" action="#">
+            <div class="fields">
+              <div class="field half">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="field half">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="6"></textarea>
+              </div>
+            </div>
+            <ul class="actions">
+              <li>
+                <input type="submit" value="Send Message" class="primary" />
+              </li>
+              <li><input type="reset" value="Clear" /></li>
+            </ul>
+          </form>
+        </section>
+        <section class="split">
+          <section>
+            <div class="contact-method">
+              <span class="icon solid alt fa-envelope"></span>
+              <h3>이메일</h3>
+              <a href="#">aiden-dental@naver.com</a>
+            </div>
+          </section>
+          <section>
+            <div class="contact-method">
+              <span class="icon solid alt fa-phone"></span>
+              <h3>전화번호</h3>
+              <span>(02) 539-2112 </span>
+            </div>
+          </section>
+          <section>
+            <div class="contact-method">
+              <span class="icon solid alt fa-home"></span>
+              <h3>주소</h3>
+              <span>서울 강남구 선릉로 578<br />
+                태정 빌딩 3F<br />
+              </span>
+            </div>
+          </section>
+        </section>
       </div>
     </section>
-  </div>
 
-  <!-- Contact -->
-  <section id="contact">
-    <div class="inner">
-      <section>
-        <form method="post" action="#">
-          <div class="fields">
-            <div class="field half">
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div class="field half">
-              <label for="email">Email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea name="message" id="message" rows="6"></textarea>
-            </div>
-          </div>
-          <ul class="actions">
-            <li>
-              <input type="submit" value="Send Message" class="primary" />
-            </li>
-            <li><input type="reset" value="Clear" /></li>
-          </ul>
-        </form>
-      </section>
-      <section class="split">
-        <section>
-          <div class="contact-method">
-            <span class="icon solid alt fa-envelope"></span>
-            <h3>이메일</h3>
-            <a href="#">aiden-dental@naver.com</a>
-          </div>
-        </section>
-        <section>
-          <div class="contact-method">
-            <span class="icon solid alt fa-phone"></span>
-            <h3>전화번호</h3>
-            <span>(02) 539-2112 </span>
-          </div>
-        </section>
-        <section>
-          <div class="contact-method">
-            <span class="icon solid alt fa-home"></span>
-            <h3>주소</h3>
-            <span>서울 강남구 선릉로 578<br />
-              태정 빌딩 3F<br />
-            </span>
-          </div>
-        </section>
-      </section>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer id="footer">
-    <div class="inner">
-      <ul class="icons">
-        <li>
-          <a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a>
-        </li>
-        <li>
-          <a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a>
-        </li>
-        <li>
-          <a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a>
-        </li>
-        <li>
-          <a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
-        </li>
-        <li>
-          <a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a>
-        </li>
-      </ul>
-      <ul class="copyright">
-        <li>&copy; Untitled</li>
-        <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-      </ul>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="inner">
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a>
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a>
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a>
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a>
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; Untitled</li>
+          <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </footer>
   </div>
 
   <!-- Scripts -->
