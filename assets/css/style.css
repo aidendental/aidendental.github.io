@@ -53,6 +53,12 @@ ul {
   height: 50px;
 }
 
+@media screen and (max-width: 870px){
+  #header-menu{
+    display: none;
+  }
+}
+
 #header-menu li{
   display: inline-block;
   font-size: 1.23rem;
