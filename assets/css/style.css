@@ -25,6 +25,10 @@
   src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
   src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
  }
+
+ strong{
+  font-weight: 400;
+}
  
  body {
   font-family: 'NanumBarunGothic', sans-serif;
@@ -173,23 +177,16 @@ video{
 
 .treatment-subject{
   background-color: white;
-  display:grid;
-  grid-template-columns: 20em 1fr;
+  padding : 2em 3em 3em 3em;
 }
 
 #treatment-subject-text{
-  width :80rem;
-  padding: 3em 0 0 3em;
+  padding: 0 0 2em 0;
 }
 
 #treatment-subject-text span{
   color: #151515;
-  font-size: x-large;
-  font-weight: 100;
-}
-#treatment-subject-text h2 span{
-  color: #151515;
-  font-size:large;
+  font-size:larger;
   font-weight: 100;
 }
 
@@ -198,6 +195,8 @@ video{
   height: 30rem;
 }
 
-.carousel-item img{
-  object-fit: cover;
+/***********오시는길************/
+.location{
+  display: grid;
+  grid-template-columns: 30% 1fr;
 }

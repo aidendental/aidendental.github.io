@@ -82,39 +82,60 @@
         <li><a href="denture.html">틀니치료</a></li>
       </ul>
     </nav>
-
   </div>
-
-  <section class="video-player">
-    <video muted autoplay loop class="video-player-item">
-      <source src="videos/Clouds.mp4" type="video/mp4">
-    </video>
-    <video muted autoplay loop class="video-player-item">
-      <source src="videos/Skyscrapers.mp4" type="video/mp4">
-    </video>
-    <video muted autoplay loop class="video-player-item">
-      <source src="videos/Waves.mp4" type="video/mp4">
-    </video>
-  </section>
-
-  <!--Popup Modal-->
-
-
 
 
 
 
   <!-- Main -->
   <div id="main">
+    <!--main video-->
+    <!--carousel-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div>
+            <video muted autoplay loop class="video-player-item">
+              <source src="videos/Clouds.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <video muted autoplay loop class="video-player-item">
+            <source src="videos/Skyscrapers.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="carousel-item">
+          <video muted autoplay loop class="video-player-item">
+            <source src="videos/Waves.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- prev, next button -->
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
     <!-- One -->
-    <section class="treatment-subject">
+    <article class="treatment-subject">
       <!--<header class="major">
         <h3><a href="landing.html" class="link">이벤트</a></h3>
         <p>Ipsum dolor sit amet</p>
       </header>-->
       <section id="treatment-subject-text">
-        <h2><span>진료 과목 소개</span></h2>
-        <span>강남에이든치과는<br>정확한 진단으로<br>철저한 치료계획 수립을<br>원칙으로 합니다</span>
+        <span>강남에이든치과는 <strong>정확한 진단</strong>으로<br><strong>철저한 치료계획 수립</strong>을 원칙으로 합니다</span>
       </section>
       <section>
         <!--carousel-->
@@ -128,7 +149,6 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <!--<img class="d-block w-100" src="images/index_banner_02.png" alt="임플란트" />-->
               <div>
                 <h3>튼튼한 임플란트</h3>
                 <h4>최소절개, 최소통증, 빠른회복</h4>
@@ -168,74 +188,30 @@
           </a>
         </div>
       </section>
-    </section>
+    </article>
 
-    <!-- Map -->
-    <div id="map" style="width:100%;height:400px;"></div>
+    <article class="location">
+      <section>
+        <span>오시는길</span>
+        <span>서울 강남구 선릉로 578<br />
+          태정 빌딩 3F<br />
+        </span>
+        <span>(02) 539-2112 </span>
 
-    <script>
-      var mapOptions = {
-        center: new naver.maps.LatLng(37.51005, 127.04414),
-        zoom: 10
-      };
 
-      var map = new naver.maps.Map('map', mapOptions);
-    </script>
+      </section>
+      <!-- Map -->
+      <div id="map" style="width:100%;height: 400px;"></div>
 
-    <!-- Contact -->
-    <section id="contact">
-      <div class="inner">
-        <section>
-          <form method="post" action="#">
-            <div class="fields">
-              <div class="field half">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" />
-              </div>
-              <div class="field half">
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email" />
-              </div>
-              <div class="field">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="6"></textarea>
-              </div>
-            </div>
-            <ul class="actions">
-              <li>
-                <input type="submit" value="Send Message" class="primary" />
-              </li>
-              <li><input type="reset" value="Clear" /></li>
-            </ul>
-          </form>
-        </section>
-        <section class="split">
-          <section>
-            <div class="contact-method">
-              <span class="icon solid alt fa-envelope"></span>
-              <h3>이메일</h3>
-              <a href="#">aiden-dental@naver.com</a>
-            </div>
-          </section>
-          <section>
-            <div class="contact-method">
-              <span class="icon solid alt fa-phone"></span>
-              <h3>전화번호</h3>
-              <span>(02) 539-2112 </span>
-            </div>
-          </section>
-          <section>
-            <div class="contact-method">
-              <span class="icon solid alt fa-home"></span>
-              <h3>주소</h3>
-              <span>서울 강남구 선릉로 578<br />
-                태정 빌딩 3F<br />
-              </span>
-            </div>
-          </section>
-        </section>
-      </div>
-    </section>
+      <script>
+        var mapOptions = {
+          center: new naver.maps.LatLng(37.51005, 127.04414),
+          zoom: 16
+        };
+
+        var map = new naver.maps.Map('map', mapOptions);
+      </script>
+    </article>
 
     <!-- Footer -->
     <footer id="footer">
@@ -255,6 +231,9 @@
           </li>
           <li>
             <a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a>
+          </li>
+          <li>
+            <a href="#">aiden-dental@naver.com</a>
           </li>
         </ul>
       </div>
