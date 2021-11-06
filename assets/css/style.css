@@ -2,13 +2,16 @@
   --main-color: #0c9aaa;
 }
 
- strong{
-  font-weight: 400;
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  color: #333333;
 }
- 
- body {
-  font-family: 'NanumBarunGothic', sans-serif;
- }
+ strong{
+  font-weight: 500;
+}
 
 img {
   width: 100%;
@@ -42,12 +45,14 @@ ul {
 #header-menu li{
   display: inline-block;
   font-size: 1.23rem;
-  font-weight: 300;
+  font-weight: 400;
+  color:white;
 }
 
 #quick-menu {
   font-size: 1.23rem;
-  font-weight: 300;
+  font-weight: 400;
+  color:white;
 }
 
 .right{
@@ -163,7 +168,6 @@ video{
 #treatment-subject-text span{
   color: #151515;
   font-size:larger;
-  font-weight: 100;
 }
 
 .carousel-item{
