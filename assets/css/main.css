@@ -3196,10 +3196,10 @@ button:disabled,
   display: flex;
   cursor: default;
   font-weight: 600;
-  height: 3.25em;
+  height: 3em;
   left: 0;
   letter-spacing: 0.04em;
-  line-height: 3.25em;
+  line-height: 3em;
   margin: 0;
   position: fixed;
   text-transform: uppercase;
