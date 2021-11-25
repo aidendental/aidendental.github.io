@@ -1,21 +1,32 @@
 :root {
-  --main-color: #0c9aaa;
+  --main-color: #A7CDCF;
+  --background-color: #D0E4E5;
+  
 }
 
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 100;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 300;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 500;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
 
 body{
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Noto Sans KR';
   font-weight: 300;
   color: #333333;
-}
- strong{
-  font-weight: 500;
 }
 
 img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 a {
@@ -24,6 +35,54 @@ a {
 
 ul {
   list-style: none;
+}
+
+.bold{
+  font-weight: 400;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.bigText{
+  /* 55px */
+  font-size:3.38rem;
+  font-weight:700;
+  line-height: 110%;
+}
+
+.mainText{
+  /* 24px */ 
+  font-size:1.47rem;
+  line-height: 120%;
+}
+
+.subText{
+  /* 18px */
+  font-size:1.10rem;
+  line-height: 120%;
+}
+
+.smallText{
+  /* 14px */
+  font-size:0.86rem;
+  color: #555555;
+  line-height: 120%;
+}
+
+
+.hasBackGroundColor{
+  background-color: #D0E4E5;
+}
+
+.coloredText{
+  color: var(--main-color);
+}
+
+.wrap{
+  margin-left: 8.47%;
+  margin-right: 8.47%;
 }
 
 .main-header {
@@ -79,7 +138,6 @@ ul {
 
 .flags img {
   border-radius: 50%;
-  object-fit: cover;
 }
 
 
@@ -93,90 +151,89 @@ video{
   width: 100%;
 }
 
-/********** 팝업(모달) ***********/
-#modal.modal-overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(1.5px);
-  -webkit-backdrop-filter: blur(1.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-#modal .modal-window {
-  background: rgba( 69, 139, 197, 0.70 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 13.5px );
-  -webkit-backdrop-filter: blur( 13.5px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  width: 400px;
-  height: 500px;
-  position: relative;
-  top: -100px;
-  padding: 10px;
-}
-
-#modal .title {
-  padding-left: 10px;
-  display: inline;
-  text-shadow: 1px 1px 2px gray;
-  color: white;
-  
-}
-
-#modal .title h2 {
-  display: inline;
-}
-
-#modal .close-area {
-  display: inline;
-  float: right;
-  padding-right: 10px;
-  cursor: pointer;
-  text-shadow: 1px 1px 2px gray;
-  color: white;
-}
-
-#modal .content {
-  margin-top: 20px;
-  padding: 0px 10px;
-  text-shadow: 1px 1px 2px gray;
-  color: white;
-}
-
 /*************진료과목**************/
 
 .treatment-subject{
-  background-color: white;
-  padding : 2em 3em 3em 3em;
+  margin-top: 6rem;
 }
 
 #treatment-subject-text{
-  padding: 0 0 2em 0;
+  padding: 0 0 1.8rem 0;
 }
 
-#treatment-subject-text span{
-  color: #151515;
-  font-size:larger;
-}
 
 .carousel-item{
   background-color: #eeeeee;
-  height: 30rem;
+  height: 40rem;
 }
 
 /***********오시는길************/
-.location{
+#location{
   display: grid;
-  grid-template-columns: 30% 1fr;
+  grid-template-columns: 38.9% 1fr;
+}
+
+#locationText{
+  padding-left: 12.4%;
+}
+
+#history{
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
+
+#doctorName{
+  font-size: 1.72rem;
+  font-weight: 500;
+}
+
+#doctorProfile{
+  display: grid;
+  grid-template-columns: 70% 1fr;
+}
+
+#roomVideoArticle{
+  height: 26.875rem;
+  margin-bottom: 4.75rem;
+}
+
+#roomVideo{
+  width:66%;
+  height: 100%;
+}
+
+#map{
+  width:100%;
+  height: 590px;
+}
+
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  height: 360px;
+  margin-bottom: 20px;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.card {
+  width: 466px;
+  height: 360px;
+  display: inline-block;
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.cardImg{
+  height: 280px;
+}
+
+.color7{
+  color:#777777
+}
+
+.color5{
+  color:#555555
 }

@@ -189,7 +189,7 @@ html {
 }
 
 body {
-  background: #242943; /*************여기 배경색 !!!!!!*************/
+  background: white; /*************여기 배경색 !!!!!!*************/
 }
 
 body.is-preload *,
@@ -215,8 +215,6 @@ textarea {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 17pt;
   font-weight: 300;
-  letter-spacing: 0.025em;
-  line-height: 1.65;
 }
 
 @media screen and (max-width: 1680px) {
