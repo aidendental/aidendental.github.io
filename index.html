@@ -111,14 +111,20 @@
     </div>
 
 
+    <div id="box"></div>
     <article id="doctorProfile" class="wrap">
       <section>
-        <section class="bigText coloredText">
-          <span class="italic">"&nbsp;</span>
-          <span>환자가 미소짓는,<br>행복한 치과를 꿈꾸고 있습니다.</span>
-          <span class="italic">"</span>
+        <section class="bigText colorMain" id="happyText">
+          <section id="happyTextFirst">
+            <span class="italic">"&nbsp;</span>
+            <span>환자가 미소짓는,<br></span>
+          </section>
+          <section>
+            <span>행복한 치과를 꿈꾸고 있습니다.</span>
+            <span class="italic" id="happyTextLast">"</span>
+          </section>
         </section>
-        <section>
+        <section id="doctor">
           <span class="mainText bold">대표원장</span>
           <span id="doctorName">이동인</span>
           <br>
@@ -152,40 +158,50 @@
         </section>
       </section>
       <section>
-        <img src="images/doctor2.png">
+        <img id="doctorPic" src="images/doctor2.png">
       </section>
     </article>
 
     <!-- 진료과목 -->
     <article class="treatment-subject wrap">
       <section id="treatment-subject-text">
-        <span class="mainText bold coloredText">강남에이든치과는 정확한 진단으로<br>철저한 치료계획 수립을 원칙으로 합니다</span>
+        <span class="mainText bold colorMain">강남에이든치과는 정확한 진단으로<br>철저한 치료계획 수립을 원칙으로 합니다</span>
       </section>
       <section>
         <div class="scrolling-wrapper-flexbox">
           <div class="card">
             <img class="cardImg" src="images/jaw.png">
-            <span class="subText bold marginTop2rem">최소절개, 최소통증, 빠른 회복 임플란트<br></span>
+            <section>
+              <span class="subText bold">최소절개, 최소통증, 빠른 회복 임플란트<br></span>
+            </section>
             <span class="smallText">풍부한 임상경험을 바탕으로 빠르고 정확하게 수술합니다<br></span>
           </div>
           <div class="card">
             <img class="cardImg" src="images/jaw.png">
-            <span class="subText bold">보철치료 틀니는 보철과 전문의에게<br></span>
+            <section>
+              <span class="subText bold">보철치료 틀니는 보철과 전문의에게<br></span>
+            </section>
             <span class="smallText">대학 교수 보철과 전문의의 전문분야 틀니<br>풍부한 임상경험으로 보다 편하게 제작해드립니다<br></span>
           </div>
           <div class="card">
             <img class="cardImg" src="images/jaw.png">
-            <span class="subText bold">건강하게 자신감 있는 웃음, 라미네이트<br></span>
+            <section>
+              <span class="subText bold">건강하게 자신감 있는 웃음, 라미네이트<br></span>
+            </section>
             <span class="smallText">먼 훗날까지 생각하여 안전하고 건강하게 시술합니다<br></span>
           </div>
           <div class="card">
             <img class="cardImg" src="images/jaw.png">
-            <span class="subText bold">시리지 않는 건강한 치아/잇몸 미백<br></span>
+            <section>
+              <span class="subText bold">시리지 않는 건강한 치아/잇몸 미백<br></span>
+            </section>
             <span class="smallText">이 손상 없이 치아의 자신감을 되찾아드립니다<br></span>
           </div>
           <div class="card">
             <img class="cardImg" src="images/jaw.png">
-            <span class="subText bold">보험적용으로 걱정없는 턱관절치료<br></span>
+            <section>
+              <span class="subText bold">보험적용으로 걱정없는 턱관절치료<br></span>
+            </section>
             <span class="smallText">턱관절 통증과 치료비 부담을 덜어드립니다<br></span>
           </div>
         </div>
@@ -198,6 +214,10 @@
           <source src="videos/Clouds.mp4" type="video/mp4">
         </video>
       </section>
+      <section id="videoTextBox">
+        <span class="mainText bold colorMain">고객을 최우선으로 생각하는 에이든치과<br></span>
+        <span class="subText color7 bold">교차감염을 막기 위해 전체 개별 진료실을 구축하고<br>
+          개인별로 멸균/소독하여 준비한 1인 1기구만 사용합니다</span>
     </article>
 
     <article id="location" class="wrap">
@@ -219,21 +239,46 @@
       </script>
 
       <section id="locationText">
-        <span class=" bigText coloredText">퇴근하고 오셔도 괜찮아요<br>매주 화/목 밤 8시 반까지<br></span>
-        <span class="subText color5">평일 낮에 시간 내기 어려우신 여러분을 위해 야간진료를 하고 있습니다<br></span>
-        <span class="mainText hasBackGroundColor bold">오시는길<br></span>
-        <span class="subText color7">
-          서울 강남구 선릉로 578태정 빌딩 3F<br>
-          선정릉역 3번 출구 뒤돌아 도보 1분<br>
-        </span>
+        <!-- 
+          span을 모두 section 안에 넣어놓은 이유는
+          span이 inline 요소여서 height 지정이 안되기 때문이에요
+          -> section으로 감싸서 section에 margin 줘서 높이 조절했습니당
+        -->
+        <section>
+          <span class=" bigText colorMain">퇴근하고 오셔도 괜찮아요<br>매주 화/목 밤 8시 반까지<br></span>
+        </section>
+        <section id="smallWelcomeText">
+          <span class="subText color5">평일 낮에 시간 내기 어려우신 여러분을 위해 야간진료를 하고 있습니다<br></span>
+        </section>
+        <section>
+          <span class="mainText bold">오시는길<br></span>
+        </section>
+        <section id="address">
+          <span class="subText color7" id="addressText">
+            서울 강남구 선릉로 578태정 빌딩 3F<br>
+            선정릉역 3번 출구 뒤돌아 도보 1분<br>
+          </span>
+        </section>
 
-        <span class="mainText hasBackGroundColor bold">진료시간<br></span>
-        <span class="subText color7">
-          월, 수, 금 : 오전 9:30 - 오후 6:30<br>
-          화, 목 : 오전 9:30 - 오후 8:30<br>
-          토 요 일 : 오전 9:30 - 오후 1:30<br>
-          점심시간 : 오후 1:00 - 오후 2:00<br>
-        </span>
+        <span class="mainText bold">진료시간<br></span>
+        <table class="subText color7" id="timeTable">
+          <tr>
+            <td>월, 수, 금</td>
+            <td>: 오전 9:30 - 오후 6:30</td>
+          </tr>
+          <tr>
+            <td>화, 목</td>
+            <td>: 오전 9:30 - 오후 8:30</td>
+          </tr>
+          <tr>
+            <td>토 요 일</td>
+            <td>: 오전 9:30 - 오후 1:30</td>
+          </tr>
+          <tr>
+            <td>점심시간</td>
+            <td>: 오후 1:00 - 오후 2:00</td>
+          </tr>
+        </table>
       </section>
     </article>
 
