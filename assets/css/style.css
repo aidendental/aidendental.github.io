@@ -248,7 +248,7 @@ video{
   flex-wrap: nowrap;
   overflow-x: auto;
 
-  height: 360px;
+  height: 380px;
   margin-bottom: 20px;
   width: 100%;
   -webkit-overflow-scrolling: touch;
@@ -278,7 +278,7 @@ video{
 }
 
 #address{
-  margin-top: 1rem;
+  margin-top: 0.7rem;
   margin-bottom: 2.5rem;
 }
 
@@ -287,7 +287,7 @@ video{
 }
 
 #timeTable{
-  margin-top: 1rem;
+  margin-top: 0.7rem;
 }
 
 #happyText{
@@ -306,4 +306,16 @@ video{
 #happyTextLast{
   position:relative;
   left: -2rem;
+}
+
+.highlight{
+  background-color: var(--highlight-color);
+  width: 7rem;
+  height: 1.2rem;
+  text-align: center;
+}
+
+.highlight span{
+  position: relative;
+  top : -0.3rem;
 }
