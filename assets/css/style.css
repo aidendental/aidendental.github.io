@@ -1,4 +1,5 @@
 :root {
+  font-size: 62.5%; /* rem 단위 계산을 쉽게 할 수 있도록 기본 단위를 10px로 맞춰주기 */
   --main-color: #A7CDCF;
   --highlight-color: #D0E4E5;
   --background-color: #EFF7F9;
@@ -29,6 +30,8 @@ ul {
   list-style: none;
 }
 
+/********* 글자 클래스 *******/
+
 .bold{
   font-weight: 400;
 }
@@ -39,26 +42,26 @@ ul {
 
 .bigText{
   /* 55px */
-  font-size:3.38rem;
+  font-size:5.5rem;
   font-weight:700;
   line-height: 110%;
 }
 
 .mainText{
   /* 24px */ 
-  font-size:1.47rem;
+  font-size:2.4rem;
   line-height: 120%;
 }
 
 .subText{
   /* 18px */
-  font-size:1.10rem;
+  font-size:1.8rem;
   line-height: 120%;
 }
 
 .smallText{
   /* 14px */
-  font-size:0.86rem;
+  font-size:1.4rem;
   color: #555555;
   line-height: 120%;
 }
@@ -75,8 +78,8 @@ ul {
   color: var(--main-color)
 }
 
-
 .wrap{
+  /* 양 옆 여백 맞추기 위한 클래스 */
   margin-left: 8.47%;
   margin-right: 8.47%;
 }
@@ -88,7 +91,7 @@ ul {
 }
 
 .logo-image {
-  height: 40px;
+  height: 4rem;
 }
 
 @media screen and (max-width: 900px){
@@ -99,13 +102,13 @@ ul {
 
 #header-menu li{
   display: inline-block;
-  font-size: 1.23rem;
+  font-size: 1.8rem;
   font-weight: 400;
   color:white;
 }
 
 #quick-menu {
-  font-size: 1.23rem;
+  font-size: 1.8rem;
   font-weight: 400;
   color:white;
 }
@@ -115,20 +118,20 @@ ul {
 }
 
 .vertical-middle{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
 }
 
 
 /************ 언어 선택 ************/
 .lang-select {
-  margin-left: 20px;
+  margin-left: 2rem;
   align-items: center;
 }
 
 .flags {
-  width: 24px;
-  height: 24px;
+  width: 2.4rem;
+  height: 2.4rem;
   display: inline-block;
 }
 
@@ -147,50 +150,47 @@ video{
   width: 100%;
 }
 
-/*************진료과목**************/
-
-.treatment-subject{
-  margin-top: 6rem;
-}
-
-#treatment-subject-text{
-  padding: 0 0 1.8rem 0;
-}
-
-
 .carousel-item{
-  background-color: #eeeeee;
-  height: 40rem;
+  height: 64rem;
 }
 
-/***********오시는길************/
-#location{
+
+/*********** 의사 프로필 ***********/
+
+#doctorProfile{
   display: grid;
-  grid-template-columns: 38.9% 1fr;
+  grid-template-columns: 65% 1fr;
+  margin-top: 3.2rem;
+  height: 64rem;
 }
 
-#locationText{
-  padding-left: 12.4%;
-  padding-top: 2rem;
+#happyText{
+  margin-top: 14.4rem;
+  margin-bottom: 4.8rem;
+  font-size: 6.5rem;
+  z-index: 10;
+  position: absolute;
+}
+
+#happyTextFirst{
+  position: relative;
+  left:-6.08rem;
+}
+
+#doctor{
+  margin-top: 32rem;
+}
+
+#doctorName{
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 200%;
 }
 
 #history{
   display: grid;
   grid-template-columns: 40% 1fr;
-  margin-top: 2rem;
-}
-
-#doctorName{
-  font-size: 1.72rem;
-  font-weight: 500;
-  line-height: 200%;
-}
-
-#doctorProfile{
-  display: grid;
-  grid-template-columns: 65% 1fr;
-  margin-top: 2rem;
-  height: 40rem;
+  margin-top: 3.2rem;
 }
 
 #box{
@@ -198,18 +198,57 @@ video{
   background-color: var(--background-color);
   z-index: -10;
   width: 100%;
-  height: 14.5rem;
-  top: 67.5rem;
+  height: 23.2rem;
+  top: 108rem;
 }
 
-#doctor{
-  margin-top: 20rem;
+
+/*************진료과목**************/
+
+.treatment-subject{
+  margin-top: 9.6rem;
 }
+
+#treatment-subject-text{
+  padding: 0 0 2.88rem 0;
+}
+
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  height: 38rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.card {
+  width: 46.6rem;
+  height: 36rem;
+  display: inline-block;
+  flex: 0 0 auto;
+  margin-right: 2rem;
+  border: none;
+}
+
+.card section{
+  margin-bottom: 0.48rem;
+}
+
+.cardImg{
+  height: 28rem;
+  margin-bottom: 2rem;
+}
+
+
+/************** 소독 영상 **********/
 
 #roomVideoArticle{
-  height: 26.875rem;
-  margin-top: 5rem;
-  margin-bottom: 4.75rem;
+  height: 43rem;
+  margin-top: 8rem;
+  margin-bottom: 7.6rem;
   background-color: var(--background-color);
   display: flex;
 }
@@ -222,13 +261,13 @@ video{
 #videoTextBox{
   position: absolute;
   z-index: 10;
-  height: 16rem;
-  width: 31rem;
+  height: 25.6rem;
+  width: 49.6rem;
   background-color: #ffffff;
   right: 0;
-  margin-top: 5rem;
-  padding-left: 3.8rem;
-  padding-top: 5rem;
+  margin-top: 8rem;
+  padding-left: 6rem;
+  padding-top: 8rem;
 }
 
 #videoTextBox :first-child{
@@ -238,48 +277,45 @@ video{
 #videoTextBox :last-child{
   line-height: 150%;
 }
+
+
+/***********오시는길************/
+
 #map{
   width:100%;
-  height: 590px;
+  height: 59rem;
 }
 
-.scrolling-wrapper-flexbox {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-
-  height: 380px;
-  margin-bottom: 20px;
-  width: 100%;
-  -webkit-overflow-scrolling: touch;
-}
-
-.card {
-  width: 466px;
-  height: 360px;
-  display: inline-block;
-  flex: 0 0 auto;
-  margin-right: 20px;
-  border: none;
-}
-
-.card section{
-  margin-bottom: 0.3rem;
-}
-
-.cardImg{
-  height: 280px;
-  margin-bottom: 20px;
+#location{
+  display: grid;
+  grid-template-columns: 38.9% 1fr;
 }
 
 #smallWelcomeText{
-  margin-top: 1.25rem;
-  margin-bottom: 4.5rem;
+  margin-top: 2rem;
+  margin-bottom: 7.2rem;
+}
+
+.highlight{
+  background-color: var(--highlight-color);
+  width: 11.2rem;
+  height: 1.9rem;
+  text-align: center;
+}
+
+.highlight span{
+  position: relative;
+  top : -0.48rem;
+}
+
+#locationText{
+  padding-left: 12.4%;
+  padding-top: 3.2rem;
 }
 
 #address{
-  margin-top: 0.7rem;
-  margin-bottom: 2.5rem;
+  margin-top: 1.12rem;
+  margin-bottom: 4rem;
 }
 
 #addressText{
@@ -287,35 +323,5 @@ video{
 }
 
 #timeTable{
-  margin-top: 0.7rem;
-}
-
-#happyText{
-  margin-top: 9rem;
-  margin-bottom: 3rem;
-  font-size: 65px;
-  z-index: 10;
-  position: absolute;
-}
-
-#happyTextFirst{
-  position: relative;
-  left:-3.8rem;
-}
-
-#happyTextLast{
-  position:relative;
-  left: -2rem;
-}
-
-.highlight{
-  background-color: var(--highlight-color);
-  width: 7rem;
-  height: 1.2rem;
-  text-align: center;
-}
-
-.highlight span{
-  position: relative;
-  top : -0.3rem;
+  margin-top: 1.12rem;
 }
