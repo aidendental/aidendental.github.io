@@ -1,0 +1,30 @@
+[data-tab-content]{
+    display: none;
+}
+
+.active[data-tab-content]{
+    display: block;
+}
+
+.tabs{
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5rem;
+}
+
+.tab{
+    width: 13rem;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab.active{
+    background-color: var(--background-color);
+}
+
+
+.active li{
+    background-color: var(--background-color);
+}
