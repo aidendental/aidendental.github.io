@@ -1,0 +1,26 @@
+
+#title{
+    font-size: 4rem;
+    text-align: center;
+}
+
+#sub-title{
+    margin-bottom: 1rem;
+}
+
+#pictograms{
+    align-items: center;
+    display: table;
+    margin: 3.5rem auto 7.5rem auto;
+}
+
+.pictogram{
+    width: 11rem;
+    display: inline-block;
+    text-align: center;
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+.pictogram img{
+    margin-bottom: 1rem;
+}
