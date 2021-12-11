@@ -1,29 +1,8 @@
-.introductionText{
-    margin-top: 6rem;
-    margin-bottom: 4rem;
-    text-align: center;
-}
-
-
 #typo{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     margin-bottom: 9.4rem;
-}
-
-table{
-    border-top: 0.2rem solid var(--background-color);
-    border-bottom: 0.2rem solid var(--background-color);
-}
-
-table td{
-    height: 40rem;
-    padding: 0 0 0 0;
-}
-
-table td:first-child{
-    width: 50%;
 }
 
 .pic{
@@ -40,15 +19,4 @@ table td:first-child{
 
 .explanation{
     margin-top: 1rem;
-}
-
-.case{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-}
-
-.case img{
-    width: 49%;
-    object-fit: cover;
 }

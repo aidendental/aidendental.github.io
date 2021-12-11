@@ -1,0 +1,16 @@
+.introductionText{
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.case{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.case img{
+    width: 49%;
+    object-fit: cover;
+}

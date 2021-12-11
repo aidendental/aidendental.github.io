@@ -1,0 +1,41 @@
+.items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+
+.item{
+    width: 31%;
+}
+
+.item img{
+    width: 22rem;
+    height: 23rem;
+}
+
+.item-title{
+    margin-bottom: 1rem;
+}
+
+#tab2-image{
+    width: 40%;
+    height: 33rem;
+    margin-bottom: 3.2rem;
+    margin-top: 4rem;
+    display: block;
+}
+
+.explanation{
+    margin-top: 1rem;
+}
+
+table{
+    border-top: none;
+    border-bottom: none;
+}
+
+
+#therapy{
+    margin-top: 5rem;
+    height: 45rem;
+}

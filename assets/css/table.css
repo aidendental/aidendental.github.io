@@ -1,0 +1,13 @@
+table{
+    border-top: 0.2rem solid var(--background-color);
+    border-bottom: 0.2rem solid var(--background-color);
+}
+
+table td{
+    height: 40rem;
+    padding: 0 0 0 0;
+}
+
+table td:first-child{
+    width: 50%;
+}

@@ -16,12 +16,6 @@ img {
   object-fit: cover;
 }
 
-video{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 a {
   text-decoration: none;
 }
@@ -40,30 +34,44 @@ ul {
   font-style: italic;
 }
 
-.bigText{
+.text55{
   /* 55px */
   font-size:5.5rem;
   font-weight:700;
   line-height: 110%;
 }
 
-.mainText{
+.text40{
+  font-size: 4rem;
+  line-height: 120%;
+}
+
+.text24{
   /* 24px */ 
   font-size:2.4rem;
   line-height: 120%;
 }
 
-.subText{
+.text20{
+  font-size: 2rem;
+  line-height: 120%;
+}
+
+.text18{
   /* 18px */
   font-size:1.8rem;
   line-height: 120%;
 }
 
-.smallText{
+.text14{
   /* 14px */
   font-size:1.4rem;
-  color: #555555;
   line-height: 120%;
+}
+
+.align-center{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .color7{
@@ -144,9 +152,17 @@ ul {
 
 video{
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .video-player-item{
   height: 64rem;
 }
 
+
+.hasBackgroundColor{
+  background-color: var(--background-color);
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
