@@ -23,8 +23,3 @@
 .tab.active{
     background-color: var(--background-color);
 }
-
-
-.active li{
-    background-color: var(--background-color);
-}

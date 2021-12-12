@@ -1,0 +1,48 @@
+
+#insurance{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#insurance-summary{
+    display: flex;
+    width: 66%;
+    background-color: white;
+    height: 22rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#insurance-summary section:not(.vertical-line) {
+    width: 15.5rem;
+    height: 15.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#insurance-summary section span:first-of-type{
+    line-height: 200%;
+}
+
+#insurance-summary section:not(#target){
+    padding-top: 3rem;
+}
+
+#target{
+    border-radius: 50%;
+    background-color: var(--background-color);
+    display: table;
+}
+
+#target span{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.vertical-line{
+    width: 1px;
+    height: 9rem;
+    background-color: #E5E5E5;
+    margin-top: auto;
+    margin-bottom: auto;
+}

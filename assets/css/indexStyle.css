@@ -1,14 +1,18 @@
 
 /*********** 의사 프로필 ***********/
 
-#doctorProfile{
+#doctor-wrapper{
+  position: relative;
+}
+
+#doctor-profile{
     display: grid;
     grid-template-columns: 65% 1fr;
     margin-top: 3.2rem;
     height: 64rem;
   }
   
-  #happyText{
+  #main-text{
     margin-top: 14.4rem;
     margin-bottom: 4.8rem;
     font-size: 6.5rem;
@@ -16,7 +20,7 @@
     position: absolute;
   }
   
-  #happyTextFirst{
+  #first-line{
     position: relative;
     left:-6.08rem;
   }
@@ -25,7 +29,7 @@
     margin-top: 32rem;
   }
   
-  #doctorName{
+  #doctor-name{
     font-size: 3rem;
     font-weight: 500;
     line-height: 200%;
@@ -42,8 +46,8 @@
     background-color: var(--background-color);
     z-index: -10;
     width: 100%;
-    height: 23.2rem;
-    top: 108rem;
+    height: 23rem;
+    bottom: 0;
   }
   
   
@@ -160,9 +164,6 @@
   #address{
     margin-top: 1.12rem;
     margin-bottom: 4rem;
-  }
-  
-  #addressText{
     line-height: 150%;
   }
   
