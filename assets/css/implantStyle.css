@@ -4,19 +4,3 @@
     justify-items: center;
     margin-bottom: 9.4rem;
 }
-
-.pic{
-    background-color: var(--background-color);
-}
-
-.text{
-    padding: 0 7rem 0 7rem;
-}
-
-.worth{
-    margin-bottom: 1rem;
-}
-
-.explanation{
-    margin-top: 1rem;
-}
