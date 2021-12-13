@@ -3,6 +3,7 @@
   --main-color: #A7CDCF;
   --highlight-color: #D0E4E5;
   --background-color: #EFF7F9;
+  --blue-gray: #70818A;
 }
 
 body{
@@ -84,6 +85,10 @@ ul {
 
 .colorMain{
   color: var(--main-color)
+}
+
+.color-blue-gray{
+  color: var(--blue-gray);
 }
 
 .wrap{
