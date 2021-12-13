@@ -2532,13 +2532,6 @@ table td:first-child{
   width: 20%;
 }
 
-table th {
-  color: #ffffff;
-  font-size: 0.9em;
-  font-weight: 600;
-  padding: 0 0.75em 0.75em 0.75em;
-  text-align: left;
-}
 
 table thead {
   border-bottom: solid 2px rgba(212, 212, 255, 0.1);
