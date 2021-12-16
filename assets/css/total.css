@@ -17,6 +17,10 @@
     margin-bottom: 1rem;
 }
 
+#tab-1 article:first-of-type{
+    margin-bottom: 4rem;
+}
+
 #tab2-image{
     width: 40%;
     height: 33rem;
@@ -34,8 +38,92 @@ table{
     border-bottom: none;
 }
 
-
 #therapy{
     margin-top: 5rem;
     height: 45rem;
+}
+
+#cavity-progress{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#cavity-progress img{
+    width: 23%;
+}
+
+.cavity-therapy-step{
+    margin-top: 6rem;
+}
+
+.cavity-illustration{
+    width: 13rem;
+    object-fit: contain;
+}
+
+.cavity-before-after{
+    margin-top: 4rem;
+}
+
+.cavity-before-after td{
+    height: 20rem;
+    width: 46.6rem;
+    text-align: center;
+}
+
+.cavity-before-after td:first-child{
+    width: 20%;
+}
+
+.cavity-before-after td:last-child{
+    text-align: right;
+}
+
+.cavity-before-after td:last-child img{
+    width: 46.6rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+hr{
+    border-top: 1px solid #E5E5E5;
+}
+
+.arrow{
+    height: 3rem;
+    position: relative;
+    width: 50%;
+}
+
+.arrow section{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow img{
+    object-fit: fill;
+}
+
+#arrow-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#second-line-arrow{
+    display: flex;
+    width: 50%;
+}
+
+#second-line-arrow .arrow{
+    margin-left: 25%;
+}
+
+.hasBackgroundColor{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
 }
