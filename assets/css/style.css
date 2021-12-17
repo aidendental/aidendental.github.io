@@ -25,6 +25,70 @@ ul {
   list-style: none;
 }
 
+
+/***** nav bar *****/
+
+my-header{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  margin-left: 3rem;
+}
+
+@media screen and (min-width: 1000px) {
+  my-header{
+      grid-template-columns: 20rem 1fr;
+  }
+}
+
+my-header img{
+  object-fit: contain;
+}
+
+my-header div{
+  padding-top: 3rem;
+  margin-left: 2rem;
+}
+
+my-header li{
+    display: inline-block;
+    top:50%;
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-right: 0.5rem;
+    color: #555555;
+}
+
+@media screen and (max-width: 900px){
+  my-header ul{
+    display: none;
+  }
+}
+
+.flags {
+  width: 2.7rem;
+  height: 2.7rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+}
+
+.flags img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+naver-booking{
+  position:fixed;
+  z-index: 100;
+  right: 2rem;
+  top:50%;
+  transform: translate(0, -50%);
+  height: 5rem;
+  width: 5rem;
+}
+
 /********* 글자 클래스 *******/
 
 .bold{
@@ -96,58 +160,6 @@ ul {
   margin-left: 8.47%;
   margin-right: 8.47%;
 }
-
-.main-header {
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-}
-
-.logo-image {
-  height: 4rem;
-}
-
-@media screen and (max-width: 900px){
-  #header-menu{
-    display: none;
-  }
-}
-
-#header-menu li{
-  display: inline-block;
-  font-size: 1.8rem;
-  font-weight: 400;
-  color:white;
-}
-
-#quick-menu {
-  font-size: 1.8rem;
-  font-weight: 400;
-  color:white;
-}
-
-.vertical-middle{
-  margin-top: 1.6rem;
-  margin-bottom: 1.6rem;
-}
-
-
-/************ 언어 선택 ************/
-.lang-select {
-  margin-left: 2rem;
-  align-items: center;
-}
-
-.flags {
-  width: 2.4rem;
-  height: 2.4rem;
-  display: inline-block;
-}
-
-.flags img {
-  border-radius: 50%;
-}
-
 
 /*************비디오**************/
 .video-player{

@@ -28,67 +28,15 @@
     <link rel="stylesheet" href="assets/css/noscript.css" />
   </noscript>
 
-
   <!-- 네이버 지도 -->
   <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=bbvgfz9esz"></script>
+  <script type="module" src="/assets/js/menu.js"></script>
 
 </head>
 
 <body class="is-preload">
-  <!-- Wrapper -->
-  <div id="wrapper">
-    <!-- Header -->
-    <header id="header" class="main-header">
-      <div class="logo">
-        <a href="index.html" class="logo"><img src="images/logo.svg"></a>
-        <div class="lang-select">
-          <div class="flags">
-            <a href="index.html">
-              <img src="images/korea.png" alt="한국어" />
-            </a>
-          </div>
-          <div class="flags">
-            <a href="index-en.html">
-              <img src="images/america.png" alt="영어" />
-            </a>
-          </div>
-          <div class="flags">
-            <a href="index-ch.html">
-              <img src="images/china.png" alt="중국어" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <nav id="header-menu">
-        <ul class="vertical-middle">
-          <li><a href="implant.html">임플란트</a></li>
-          <li><a href="aesthetic-therapy.html">심미치료</a></li>
-          <li><a href="total-therapy.html">통합치료</a></li>
-          <li><a href="TMJ.html">턱관절치료</a></li>
-          <li><a href="denture.html">틀니치료</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Menu -->
-    <nav id="menu">
-      <ul class="links">
-        <li><a href="implant.html">임플란트</a></li>
-        <li><a href="aesthetic-therapy.html">심미치료</a></li>
-        <li><a href="total-therapy.html">통합치료</a></li>
-        <li><a href="TMJ.html">턱관절치료</a></li>
-        <li><a href="denture.html">틀니치료</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <!--
-  <a href="https://map.naver.com/v5/entry/place/1141782897?c=14142495.7858222,4510445.9494447,13,0,0,0,dh&placePath=%2Fbooking%3FbookingRedirectUrl=https:%2F%2Fm.booking.naver.com%2Fbooking%2F13%2Fbizes%2F555718%26entry=plt"
-    height="5" width="10" target="_blank">
-    <img src="images/jaw.png" alt="위의 이미지를 누르면 연결됩니다.">
-  </a>
-  -->
-
+  <my-header></my-header>
+  <naver-booking></naver-booking>
   <!-- Main -->
   <div id="main">
     <!--main video-->
@@ -242,11 +190,6 @@
       </script>
 
       <section id="locationText">
-        <!-- 
-          span을 모두 section 안에 넣어놓은 이유는
-          span이 inline 요소여서 height 지정이 안되기 때문이에요
-          -> section으로 감싸서 section에 margin 줘서 높이 조절했습니당
-        -->
         <section class=" text55 colorMain">
           퇴근하고 오셔도 괜찮아요<br>매주 화/목 밤 8시 반까지
         </section>
