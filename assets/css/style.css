@@ -90,20 +90,16 @@ flags-bar{
 
 /** 네이버 예약 **/
 
-naver-booking{
-  position:fixed;
-  z-index: 100;
-  right: 2rem;
-  top:50%;
-  width: 10rem;
-  transform: translate(0, -30%);
-}
-
-kakao-connecting{
+#connecting{
   position: fixed;
   z-index: 100;
-  right: 2rem;
-  top: 50%;
+  right: 3rem;
+  bottom: 3rem;
+  width: 10rem;
+}
+
+object{
+  height: 4.5rem;
   width: 10rem;
 }
 

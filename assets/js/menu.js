@@ -50,7 +50,7 @@ customElements.define("flags-bar", flagsBar);
 class naverBooking extends HTMLElement {
   connectedCallback() {
     this.innerHTML =
-      '<object width="100%" height="100%" type="text/html" data="naver-booking.html" ></object>';
+      '<object width="100%" type="text/html" data="naver-booking.html" ></object>';
   }
 }
 
@@ -59,7 +59,7 @@ customElements.define("naver-booking", naverBooking);
 class kakaoAPI extends HTMLElement {
   connectedCallback() {
     this.innerHTML =
-      '<object width="100%"height="100%" type="text/html" data="kakao.html" ></object>';
+      '<object width="100%" type="text/html" data="kakao.html" ></object>';
   }
 }
 
