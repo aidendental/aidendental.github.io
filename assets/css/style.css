@@ -32,9 +32,9 @@ my-header{
   position: fixed;
   z-index: 100;
   width: 100%;
+  margin-left: 3rem;
   display: grid;
   grid-template-columns: 20% 1fr;
-  margin-left: 3rem;
 }
 
 @media screen and (min-width: 1000px) {
@@ -67,6 +67,15 @@ my-header li{
   }
 }
 
+/** 언어 선택 **/
+
+flags-bar{
+  position: fixed;
+  z-index: 10;
+  margin-left: 3rem;
+  margin-top: 8rem;
+}
+
 .flags {
   width: 2.7rem;
   height: 2.7rem;
@@ -79,15 +88,25 @@ my-header li{
   object-fit: cover;
 }
 
+/** 네이버 예약 **/
+
 naver-booking{
   position:fixed;
   z-index: 100;
   right: 2rem;
   top:50%;
-  transform: translate(0, -50%);
-  height: 5rem;
-  width: 5rem;
+  width: 10rem;
+  transform: translate(0, -30%);
 }
+
+kakao-connecting{
+  position: fixed;
+  z-index: 100;
+  right: 2rem;
+  top: 50%;
+  width: 10rem;
+}
+
 
 /********* 글자 클래스 *******/
 
