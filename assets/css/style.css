@@ -95,10 +95,18 @@ naver-booking{
   z-index: 100;
   right: 2rem;
   top:50%;
-  transform: translate(0, -50%);
-  height: 5rem;
-  width: 5rem;
+  width: 10rem;
+  transform: translate(0, -30%);
 }
+
+kakao-connecting{
+  position: fixed;
+  z-index: 100;
+  right: 2rem;
+  top: 50%;
+  width: 10rem;
+}
+
 
 /********* 글자 클래스 *******/
 

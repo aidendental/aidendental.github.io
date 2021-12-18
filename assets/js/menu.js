@@ -55,3 +55,12 @@ class naverBooking extends HTMLElement {
 }
 
 customElements.define("naver-booking", naverBooking);
+
+class kakaoAPI extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML =
+      '<object width="100%"height="100%" type="text/html" data="kakao.html" ></object>';
+  }
+}
+
+customElements.define("kakao-connecting", kakaoAPI);
