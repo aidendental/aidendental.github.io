@@ -1,3 +1,5 @@
+@import 'animate.css';
+
 :root {
   font-size: 62.5%; /* rem 단위 계산을 쉽게 할 수 있도록 기본 단위를 10px로 맞춰주기 */
   --main-color: #A7CDCF;
@@ -202,3 +204,40 @@ video{
 .margin-bottom-1rem{
   margin-bottom: 1rem;
 }
+
+.margin-top-4rem{
+  margin-top: 4rem;
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInUp {
+  0% {
+  -webkit-transform: translateY(80%);
+  transform: translateY(80%);
+  opacity: 0;
+  }
+  100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+  }
+}
+@keyframes slideInUp {
+  0% {
+  -webkit-transform: translateY(80%);
+  transform: translateY(80%);
+  opacity: 0;
+  }
+  100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+  }
+} 
