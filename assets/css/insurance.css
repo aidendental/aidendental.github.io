@@ -8,14 +8,14 @@
     display: flex;
     width: 66%;
     background-color: white;
-    height: 22rem;
+    height: 19rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
 #insurance-summary section:not(.vertical-line) {
-    width: 15.5rem;
-    height: 15.5rem;
+    width: 13rem;
+    height: 13rem;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -25,7 +25,7 @@
 }
 
 #insurance-summary section:not(#target){
-    padding-top: 3rem;
+    padding-top: 1rem;
 }
 
 #target{

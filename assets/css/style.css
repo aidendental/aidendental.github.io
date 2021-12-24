@@ -1,4 +1,5 @@
 @import 'animate.css';
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 :root {
   font-size: 62.5%; /* rem 단위 계산을 쉽게 할 수 있도록 기본 단위를 10px로 맞춰주기 */
@@ -11,6 +12,7 @@
 body{
   font-weight: 300;
   color: #333333;
+  font-family: "Noto Sans KR", sans-serif !important;
 }
 
 img {
