@@ -64,3 +64,21 @@ class kakaoAPI extends HTMLElement {
 }
 
 customElements.define("kakao-connecting", kakaoAPI);
+
+class naverBlog extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML =
+      '<object width="100%" type="text/html" data="naverBlog.html" ></object>';
+  }
+}
+
+customElements.define("naver-blog", naverBlog);
+
+class insta extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML =
+      '<object width="100%" type="text/html" data="insta.html" ></object>';
+  }
+}
+
+customElements.define("insta-connecting", insta);
