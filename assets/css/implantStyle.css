@@ -2,5 +2,5 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    margin-bottom: 9.4rem;
+    margin-bottom: 5rem;
 }
