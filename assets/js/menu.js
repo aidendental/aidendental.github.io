@@ -73,3 +73,12 @@ class naverBlog extends HTMLElement {
 }
 
 customElements.define("naver-blog", naverBlog);
+
+class insta extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML =
+      '<object width="100%" type="text/html" data="insta.html" ></object>';
+  }
+}
+
+customElements.define("insta-connecting", insta);
