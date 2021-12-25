@@ -138,6 +138,7 @@
   #location{
     display: grid;
     grid-template-columns: 38.9% 1fr;
+    margin-bottom: 5rem;
   }
   
   #smallWelcomeText{
