@@ -82,3 +82,27 @@ class insta extends HTMLElement {
 }
 
 customElements.define("insta-connecting", insta);
+
+class MyFooter extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+      <footer id="footer" class="text14 color7 bold">
+        <img src="images/logo.svg">
+        <section>
+          <div>
+            <p>강남에이든치과의원</p>
+            <p>대표자 : 이 동 인</p>
+            <p>사업자 등록번호 : 554-36-00942</p>
+            <p>위치 : 서울틀별시 강남구 선릉로 578 태정빌딩 3층</p>
+            <p>문의전화 : 02-539-2112</p>
+          </div>
+          <div class="align-center">
+            <p>AIDEN DENTAL CLINIC ALL RIGHTS RESERVED. DESIGNED BY. HYEDOII</p>
+          </div>
+        </section>
+      </footer>
+    `;
+  }
+}
+
+customElements.define("my-footer", MyFooter);

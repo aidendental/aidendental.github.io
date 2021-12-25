@@ -242,4 +242,26 @@ video{
   transform: translateY(0);
   opacity: 1;
   }
-} 
+}
+
+#footer{
+  background-color: #FAFAFA;
+  display: grid;
+  padding-left: 3rem;
+  grid-template-columns: 20rem 1fr;
+  height: 10rem;
+  text-align: justify;
+}
+
+#footer img{
+  object-fit: contain;
+}
+
+#footer p {
+  display: inline-block;
+  margin: 0 3rem 0.2rem 0;
+}
+
+#footer section{
+  margin: 3.2rem 0 0 3rem;
+}
