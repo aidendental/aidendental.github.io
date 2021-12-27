@@ -72,7 +72,7 @@ table{
 .cavity-before-after td:last-child img{
     width: 46.6rem;
     height: 20rem;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 hr{

@@ -28,17 +28,17 @@ class flagsBar extends HTMLElement {
     this.innerHTML = `
       <section class="flags">
           <a href="index.html">
-              <img src="images/korea.png" alt="한국어" />
+              <img src="images/flags/korea.png" alt="한국어" />
           </a>
       </section>
       <section class="flags">
           <a href="index-en.html">
-              <img src="images/america.png" alt="영어" />
+              <img src="images/flags/america.png" alt="영어" />
           </a>
       </section>
       <section class="flags">
           <a href="index-ch.html">
-              <img src="images/china.png" alt="중국어" />
+              <img src="images/flags/china.png" alt="중국어" />
           </a>
       </section>
     `;
@@ -68,7 +68,7 @@ customElements.define("kakao-connecting", kakaoAPI);
 class naverBlog extends HTMLElement {
   connectedCallback() {
     this.innerHTML =
-      '<object width="100%" type="text/html" data="naverBlog.html" ></object>';
+      '<object width="100%" type="text/html" data="naver-blog.html" ></object>';
   }
 }
 
