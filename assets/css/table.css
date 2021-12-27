@@ -12,10 +12,6 @@ table td:first-child{
     width: 50%;
 }
 
-.pic{
-    background-color: var(--background-color);
-}
-
 .text{
     padding: 0 7rem 0 7rem;
 }
