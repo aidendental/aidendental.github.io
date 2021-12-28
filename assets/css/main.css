@@ -256,14 +256,13 @@ a {
 
 a:hover {
   border-bottom-color: transparent;
-  color: #ffffff !important;
+  color: #333333 !important;
   text-decoration: none;
 }
 
 a:active {
   color: #ffffff !important;
 }
-
 
 em,
 i {
