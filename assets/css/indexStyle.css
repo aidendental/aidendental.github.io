@@ -72,6 +72,10 @@
     width: 100%;
     -webkit-overflow-scrolling: touch;
   }
+
+  .scrolling-wrapper-flexbox::-webkit-scrollbar-thumb{
+    background: var(--background-color);
+  }
   
   .card {
     width: 46.6rem;
