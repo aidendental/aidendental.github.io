@@ -33,12 +33,12 @@ class flagsBar extends HTMLElement {
       </section>
       <section class="flags">
           <a href="index-en.html">
-              <img src="images/flags/america.png" alt="영어" />
+              <img src="images/flags/america-black.png" alt="영어" />
           </a>
       </section>
       <section class="flags">
           <a href="index-ch.html">
-              <img src="images/flags/china.png" alt="중국어" />
+              <img src="images/flags/china-black.png" alt="중국어" />
           </a>
       </section>
     `;
