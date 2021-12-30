@@ -14,7 +14,6 @@
 
 #doctor-image{
   filter: drop-shadow(2rem 0 0.5rem rgba(0,0,0,.1));
-  transform: translate(10%,0);
 }
   
   #main-text{
@@ -23,11 +22,11 @@
     font-size: 6.5rem;
     z-index: 10;
     position: absolute;
-    transform: translate(-1%, 0);
   }
   
   #doctor{
     margin-top: 31rem;
+    animation-delay: 0.5s;
   }
   
   #doctor-name{
@@ -40,6 +39,7 @@
     display: grid;
     grid-template-columns: 40% 1fr;
     margin-top: 3.2rem;
+    animation-delay: 1s;
   }
   
   #box{
