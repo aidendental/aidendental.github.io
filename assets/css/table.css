@@ -1,7 +1,4 @@
-table{
-    border-top: 0.2rem solid var(--background-color);
-    border-bottom: 0.2rem solid var(--background-color);
-}
+
 
 table td{
     height: 40rem;
