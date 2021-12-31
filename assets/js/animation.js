@@ -12,7 +12,7 @@ window.addEventListener("load", function () {
     .getBoundingClientRect().top;
 
   document.getElementById("doctor-wrapper").style.opacity = 0;
-  document.getElementById("location").style.opacity = 0;
+  document.getElementById("locationText").style.opacity = 0;
 });
 
 window.addEventListener("scroll", function () {
@@ -33,7 +33,7 @@ window.addEventListener("scroll", function () {
   }
 
   if (locationPosition <= window.scrollY + marginOffset) {
-    document.getElementById("location").style.opacity = 1;
+    document.getElementById("locationText").style.opacity = 1;
     document
       .getElementById("locationText")
       .classList.add("animate__animated", "animate__slideInRight");
