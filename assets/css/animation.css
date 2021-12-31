@@ -2,11 +2,9 @@
 @keyframes slideInUp {
     from {
         transform: translate(0, 20%);
-        visibility: hidden;
     }
     to {
         transform: translate(0, 0);
-        visibility: visible;
     }
 }
 .animate__slideInUp {
@@ -15,12 +13,10 @@
 
 @keyframes slideInRight {
     from{
-        transform: translate(-3%, 0);
-        visibility: hidden;
+        transform: translate(3%, 0);
     }
     to{
         transform: translate(0,0);
-        visibility: visible;
     }
 }
 .animate__slideInRight {
