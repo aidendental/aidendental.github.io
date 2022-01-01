@@ -11,11 +11,20 @@
 }
 
 .case section{
-    width: 49.5%;
+    width: 33%;
 }
 
 .case img{
     width: 100%;
-    height: 30rem;
+    height: 25rem;
     object-fit: cover;
+}
+
+.explain{
+    padding: 2rem 2rem 0 2rem;
+}
+
+hr {
+    border: 0.5px solid var(--blue-gray);
+    margin: 0.5rem 0;
 }
