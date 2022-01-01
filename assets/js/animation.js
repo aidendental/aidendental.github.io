@@ -13,6 +13,15 @@ window.addEventListener("load", function () {
 
   document.getElementById("doctor-wrapper").style.opacity = 0;
   document.getElementById("locationText").style.opacity = 0;
+
+  let cardHolder = document.getElementsByClassName("scrolling-wrapper-flexbox");
+  let cardHolderWidth = cardHolder.scrollWidth;
+
+  alert(cardHolderWidth);
+  let cards = document.getElementsByClassName("card");
+
+  cardHolder.scrollLeft = 300;
+  var i = 0;
 });
 
 window.addEventListener("scroll", function () {
