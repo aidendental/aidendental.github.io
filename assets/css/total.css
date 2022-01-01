@@ -47,7 +47,7 @@ table{
 }
 
 .cavity-illustration{
-    width: 13rem;
+    width: 40rem;
     object-fit: contain;
 }
 
@@ -57,7 +57,7 @@ table{
 
 .cavity-before-after td{
     height: 20rem;
-    width: 46.6rem;
+    width: 40rem;
     text-align: center;
 }
 

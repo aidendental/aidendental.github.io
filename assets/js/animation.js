@@ -12,7 +12,16 @@ window.addEventListener("load", function () {
     .getBoundingClientRect().top;
 
   document.getElementById("doctor-wrapper").style.opacity = 0;
-  document.getElementById("location").style.opacity = 0;
+  document.getElementById("locationText").style.opacity = 0;
+
+  let cardHolder = document.getElementsByClassName("scrolling-wrapper-flexbox");
+  let cardHolderWidth = cardHolder.scrollWidth;
+
+  alert(cardHolderWidth);
+  let cards = document.getElementsByClassName("card");
+
+  cardHolder.scrollLeft = 300;
+  var i = 0;
 });
 
 window.addEventListener("scroll", function () {
@@ -33,7 +42,7 @@ window.addEventListener("scroll", function () {
   }
 
   if (locationPosition <= window.scrollY + marginOffset) {
-    document.getElementById("location").style.opacity = 1;
+    document.getElementById("locationText").style.opacity = 1;
     document
       .getElementById("locationText")
       .classList.add("animate__animated", "animate__slideInRight");
