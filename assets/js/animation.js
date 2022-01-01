@@ -17,7 +17,7 @@ window.addEventListener("load", function () {
   let cardHolder = document.getElementsByClassName("scrolling-wrapper-flexbox");
   let cardHolderWidth = cardHolder.scrollWidth;
 
-  alert(cardHolderWidth);
+  //alert(cardHolderWidth);
   let cards = document.getElementsByClassName("card");
 
   cardHolder.scrollLeft = 300;
