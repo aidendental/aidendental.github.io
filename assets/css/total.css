@@ -75,8 +75,8 @@ table{
     object-fit: contain;
 }
 
-hr{
-    border-top: 1px solid #E5E5E5;
+#tab-1 hr{
+    border: 0.5px solid #E5E5E5;
 }
 
 .arrow{
