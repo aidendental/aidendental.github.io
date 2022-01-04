@@ -185,7 +185,7 @@ article:not(:first-of-type){
     position: relative;
     width: 8vw;
     height: 13vh;
-    background-color: #dadfe6;
+    background-color: #ebe8e1;
     z-index: 0;
     top: -100vh;
     right: -81vw;
