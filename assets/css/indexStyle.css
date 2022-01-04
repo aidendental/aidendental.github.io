@@ -173,12 +173,12 @@ article:not(:first-of-type){
 
   #deco{
     position: relative;
-    width: 30vw;
+    width: 40vw;
     height: 40vh;
     border: double 4px #777777;
     z-index: 3;
     top: -93vh;
-    right: -55vw;
+    right: -45vw;
   }
 
   #deco2{
