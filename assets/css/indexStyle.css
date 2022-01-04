@@ -122,17 +122,13 @@
   #videoTextBox{
     position: absolute;
     z-index: 10;
-    height: 25.6rem;
-    width: 49.6rem;
+    height: 28rem;
+    width: 46rem;
     background-color: #ffffff;
     right: 0;
     margin-top: 8rem;
     padding-left: 5rem;
-    padding-top: 8rem;
-  }
-  
-  #videoTextBox :first-child{
-    line-height: 200%;
+    padding-top: 4rem;
   }
   
   #videoTextBox :last-child{
