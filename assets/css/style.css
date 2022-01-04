@@ -130,6 +130,10 @@ object{
   font-weight: 400;
 }
 
+.bolder{
+  font-weight: 500;
+}
+
 .text55{
   /* 55px */
   font-size:5.5rem;
@@ -200,9 +204,12 @@ video{
 }
 
 .main-img{
-  height: 64rem;
+  height: 70rem;
 }
 
+.carousel-item{
+  height: 70rem;
+}
 
 
 .hasBackgroundColor{

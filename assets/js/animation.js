@@ -11,7 +11,9 @@ window.addEventListener("load", function () {
     .getElementById("location")
     .getBoundingClientRect().top;
 
-  document.getElementById("doctor-wrapper").style.opacity = 0;
+  document.getElementById("main-text").style.opacity = 0;
+  document.getElementById("doctor").style.opacity = 0;
+  document.getElementById("history").style.opacity = 0;
   document.getElementById("locationText").style.opacity = 0;
 
   let cardHolder = document.getElementsByClassName("scrolling-wrapper-flexbox");
@@ -26,12 +28,17 @@ window.addEventListener("load", function () {
 
 window.addEventListener("scroll", function () {
   if (doctorPosition <= window.scrollY + marginOffset) {
-    document.getElementById("doctor-wrapper").style.opacity = 1;
+    document.getElementById("main-text").style.opacity = 1;
+    document.getElementById("doctor").style.opacity = 1;
+    document.getElementById("history").style.opacity = 1;
     document
       .getElementById("main-text")
       .classList.add("animate__animated", "animate__slideInUp");
     document
       .getElementById("doctor-image")
+      .classList.add("animate__animated", "animate__pulse");
+    document
+      .getElementById("autograph")
       .classList.add("animate__animated", "animate__pulse");
     document
       .getElementById("doctor")
