@@ -143,11 +143,13 @@ article:not(:first-of-type){
   
   #roomVideoArticle{
     background-color: var(--background-color);
-    display: flex;
   }
   
   #roomVideo{
-    width:80vw;
+    position: relative;
+    z-index: 5;
+    height: 60vh;
+    width:70vw;
   }
 
   #roomVideo video{
@@ -160,14 +162,34 @@ article:not(:first-of-type){
     height: 40vh;
     width: 40vw;
     background-color: #ffffff;
-    right: 4vw;
     padding: 7vh 3vw 5vh 3.5vw;
+    top: -66vh;
+    right: -60vw;
   }
   
   #videoTextBox :last-child{
     line-height: 150%;
   }
-  
+
+  #deco{
+    position: relative;
+    width: 30vw;
+    height: 40vh;
+    border: double 4px #777777;
+    z-index: 3;
+    top: -93vh;
+    right: -55vw;
+  }
+
+  #deco2{
+    position: relative;
+    width: 8vw;
+    height: 13vh;
+    background-color: #dadfe6;
+    z-index: 0;
+    top: -100vh;
+    right: -81vw;
+  }
   
   /***********오시는길************/
   
