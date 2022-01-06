@@ -137,10 +137,20 @@ article:not(:first-of-type){
   .card section{
     margin-bottom: 0.48rem;
   }
+
+  .card section:first-of-type{
+    font-size: 2.2rem;
+    margin: 2rem 0 0.8rem 0;
+  }
+
+  .card span{
+    font-size: 1.6rem;
+    line-height: 120%;
+    color: #777777;
+  }
   
   .cardImg{
     height: 28rem;
-    margin-bottom: 2rem;
     overflow: hidden;
   }
 
@@ -148,7 +158,6 @@ article:not(:first-of-type){
     background-image: url("/images/index/whitening.png");
     background-position: 45% 50%;
     background-size: 140%;
-    margin-bottom: 2rem;
   }
   
   
@@ -179,9 +188,18 @@ article:not(:first-of-type){
     top: -66vh;
     right: -60vw;
   }
+
+  #videoTextBox section:first-of-type{
+    font-size: 4rem;
+    color: var(--blue-gray);
+    margin-bottom: 1rem;
+    line-height: 130%;
+  }
   
   #videoTextBox :last-child{
     line-height: 150%;
+    font-size: 1.8rem;
+    color: #777777;
   }
 
   #deco{
@@ -221,6 +239,9 @@ article:not(:first-of-type){
     margin-top: 2rem;
     margin-bottom: 7.2rem;
     animation-delay: 0.3s;
+
+    font-size: 1.8rem;
+    color: #777777;
   }
   
   .highlight{
@@ -228,6 +249,8 @@ article:not(:first-of-type){
     width: 11.2rem;
     height: 1.7rem;
     text-align: center;
+
+    font-size: 2.4rem;
   }
   
   .highlight span{
@@ -244,8 +267,13 @@ article:not(:first-of-type){
     margin-top: 1.12rem;
     margin-bottom: 4rem;
     line-height: 150%;
+
+    font-size: 1.8rem;
+    color: #777777;
   }
   
   #timeTable{
     margin-top: 1.12rem;
+    font-size: 1.8rem;
+    color: #777777;
   }

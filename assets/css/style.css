@@ -126,10 +126,6 @@ object{
 
 /********* 글자 클래스 *******/
 
-.bold{
-  font-weight: 400;
-}
-
 .bolder{
   font-weight: 500;
 }
