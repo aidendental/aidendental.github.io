@@ -2,6 +2,8 @@
 #insurance{
     padding-top: 4rem;
     padding-bottom: 4rem;
+    background-color: var(--background-color);
+    text-align: center;
 }
 
 #insurance-summary{
@@ -9,8 +11,7 @@
     width: 66%;
     background-color: white;
     height: 19rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin: 3rem auto 3rem auto;
 }
 
 #insurance-summary section:not(.vertical-line) {
@@ -32,6 +33,9 @@
     border-radius: 50%;
     background-color: var(--background-color);
     display: table;
+
+    font-size: 2rem;
+    margin: 0 auto 0 auto;
 }
 
 #target span{
@@ -45,4 +49,18 @@
     background-color: #E5E5E5;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.insurance-explain{
+    margin: auto;
+}
+
+.insurance-explain span:first-of-type{
+    font-size: 2rem;
+    line-height: 120%;
+}
+
+.insurance-explain span:last-of-type{
+    font-size: 1.6rem;
+    line-height: 120%;
 }
