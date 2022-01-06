@@ -26,6 +26,18 @@ article:not(:first-of-type){
   height: 100vh;
 }
 
+
+.main-text{
+  font-size: 5rem; 
+  line-height: 120%; 
+  margin-bottom: 2vh;
+}
+
+.sub-text{
+  font-size: 2.5rem; 
+  line-height: 150%;
+}
+
 /*********** 의사 프로필 ***********/
 
 #doctor-wrapper{
@@ -45,8 +57,10 @@ article:not(:first-of-type){
   #main-text{
     margin-top: 10vh;
     margin-bottom: 4.8rem;
-    font-size: 6.5rem;
+    font-size: 8rem;
+    line-height: 110%;
     z-index: 10;
+    color: var(--main-color);
     position: absolute;
   }
   
@@ -57,7 +71,6 @@ article:not(:first-of-type){
   
   #doctor-name{
     font-size: 3rem;
-    font-weight: 500;
     line-height: 200%;
   }
   
@@ -185,7 +198,7 @@ article:not(:first-of-type){
     position: relative;
     width: 8vw;
     height: 13vh;
-    background-color: #ebe8e1;
+    border: #ebe8e1 4px solid;
     z-index: 0;
     top: -100vh;
     right: -81vw;
@@ -213,18 +226,18 @@ article:not(:first-of-type){
   .highlight{
     background-color: var(--highlight-color);
     width: 11.2rem;
-    height: 1.9rem;
+    height: 1.7rem;
     text-align: center;
   }
   
   .highlight span{
     position: relative;
-    top : -0.48rem;
+    top : -0.7rem;
   }
   
   #locationText{
-    padding-left: 12.4%;
-    padding-top: 3.2rem;
+    padding-left: 5vw;
+    padding-top: 3vh;
   }
   
   #address{

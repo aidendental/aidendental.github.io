@@ -11,6 +11,23 @@
     margin-bottom: 2rem;
 }
 
+.step-num{
+    font-size: 4rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+.step-todo{
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.step-explain{
+    font-size: 1.4rem;
+    color: #555555;
+    line-height: 140%;
+}
+
 .bolder{
     font-weight: 900;
 }

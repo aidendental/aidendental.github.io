@@ -3,6 +3,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     margin-bottom: 5rem;
+
+    color: var(--blue-gray);
+    font-size: 5.5rem;
 }
 
 .wrap{

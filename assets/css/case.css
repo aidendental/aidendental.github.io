@@ -1,13 +1,19 @@
-.introductionText{
-    margin-top: 3rem;
+.case-title{
+    font-size: 3rem;
     margin-bottom: 2rem;
-    text-align: center;
+}
+
+.case-num{
+    font-size: 2.4rem;
 }
 
 .case{
     display: flex;
     justify-content: space-between;
     margin-bottom: 5rem;
+
+    font-size: 1.8rem;
+    line-height: 120%;
 }
 
 .case section{
@@ -21,10 +27,15 @@
 }
 
 .explain{
-    padding: 2rem 2rem 0 2rem;
+    color: #555555;
+    font-size: 1.6rem;
+    padding: 0 2rem 0 2rem;
+    align-self: center;
 }
 
 hr {
-    border: 0.5px solid var(--blue-gray);
+    border: 0;
+    height: 0.5px;
+    background-color: var(--blue-gray);
     margin: 0.5rem 0;
 }
