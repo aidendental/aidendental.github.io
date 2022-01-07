@@ -23,14 +23,33 @@
     animation: slideInRight 1s;
 }
 
-@keyframes pulse {
-    from {
-        transform: scale(1.03, 1.03);
+@keyframes pulseForSmile {
+    0%{
+        background-size: 140%;
     }
-    to {
-        transform: scale(1, 1);
+    50% {
+        background-size: 145%;
+    }
+    100% {
+        background-size: 140%;
     }
 }
+.animate__pulseForSmile {
+    animation: pulseForSmile 2s;
+}
+
+@keyframes pulse{
+    0%{
+        background-size: 100%;
+    }
+    50%{
+        background-size: 105%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
 .animate__pulse {
-    animation: pulse 1s;
+    animation: pulse 2s;
 }

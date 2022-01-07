@@ -152,14 +152,8 @@ article:not(:first-of-type){
   .cardImg{
     height: 28rem;
     overflow: hidden;
+    border-radius: 1rem;
   }
-
-  #smile{
-    background-image: url("/images/index/whitening.png");
-    background-position: 45% 50%;
-    background-size: 140%;
-  }
-  
   
   /************** 소독 영상 **********/
   
