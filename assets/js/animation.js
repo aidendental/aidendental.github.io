@@ -1,57 +1,86 @@
-var doctorPosition;
-var locationPosition;
-let marginOffset = 430;
-
 window.addEventListener("load", function () {
-  doctorPosition = document
-    .getElementById("doctor-wrapper")
-    .getBoundingClientRect().top;
+  var selector = "#treatment-subject-text";
+  var intersectionOptions = {
+    root: null, // use the viewport
+    rootMargin: "0px",
+    threshold: 1.0,
+  };
 
-  locationPosition = document
-    .getElementById("location")
-    .getBoundingClientRect().top;
+  // 진료과목 움직이기
+  // 보일 때에만 움직이게 하면 setInterval queue에 이미 들어간 명령 때문에 버벅거려서
+  // 그냥 로드되고 계속 움직이게 해뒀습니다.
+  var cardHolder = document.getElementsByClassName(
+    "scrolling-wrapper-flexbox"
+  )[0];
+  var cards = document.getElementsByClassName("cardImg");
+  var cardNum = cards.length;
 
-  document.getElementById("main-text").style.opacity = 0;
-  document.getElementById("doctor").style.opacity = 0;
-  document.getElementById("history").style.opacity = 0;
-  document.getElementById("locationText").style.opacity = 0;
+  let scrollWidth = cardHolder.scrollWidth / cardNum;
+  var count = 0;
 
-  let cardHolder = document.getElementsByClassName("scrolling-wrapper-flexbox");
-  let cardHolderWidth = cardHolder.scrollWidth;
+  self.setInterval(() => {
+    if (count != cardNum) {
+      if (count == 3) {
+        cards[count].classList.add(
+          "animate__animated",
+          "animate__pulseForSmile"
+        );
+      } else {
+        cards[count].classList.add("animate__animated", "animate__pulse");
+      }
 
-  //alert(cardHolderWidth);
-  let cards = document.getElementsByClassName("card");
+      self.setTimeout(() => {
+        cardHolder.scrollBy({
+          left: scrollWidth,
+          top: 0,
+          behavior: "smooth",
+        });
+      }, 2000);
 
-  cardHolder.scrollLeft = 300;
-  var i = 0;
-});
+      ++count;
+    } else {
+      cardHolder.scrollTo({
+        left: 0,
+        top: 0,
+        behavior: "smooth",
+      });
+      count = 0;
+      var i = 0;
+      for (; i < cardNum; ++i) {
+        cards[i].classList.remove(
+          "animate__animated",
+          "animate__pulse",
+          "animate__pulseForSmile"
+        );
+      }
+    }
+  }, 2500);
 
-window.addEventListener("scroll", function () {
-  if (doctorPosition <= window.scrollY + marginOffset) {
-    document.getElementById("main-text").style.opacity = 1;
-    document.getElementById("doctor").style.opacity = 1;
-    document.getElementById("history").style.opacity = 1;
-    document
-      .getElementById("main-text")
-      .classList.add("animate__animated", "animate__slideInUp");
-    document
-      .getElementById("doctor-image")
-      .classList.add("animate__animated", "animate__pulse");
-    document
-      .getElementById("autograph")
-      .classList.add("animate__animated", "animate__pulse");
-    document
-      .getElementById("doctor")
-      .classList.add("animate__animated", "animate__fadeIn");
-    document
-      .getElementById("history")
-      .classList.add("animate__animated", "animate__fadeIn");
+  function intersectionCallback(entries, observer) {
+    entries.forEach((entry) => {
+      var targets = document.querySelectorAll(selector);
+
+      if (entry.intersectionRatio >= 1) {
+        // 화면에 보일 때
+        // 글자 움직이기
+        targets.forEach((target) => {
+          target.classList.add("animate__animated", "animate__slideInRight");
+        });
+      } else {
+        // 화면에 안 보일 때
+        // 글자 효과 초기화
+        targets.forEach((target) => {
+          target.classList.remove("animate__animated", "animate__slideInRight");
+        });
+      }
+    });
   }
 
-  if (locationPosition <= window.scrollY + marginOffset) {
-    document.getElementById("locationText").style.opacity = 1;
-    document
-      .getElementById("locationText")
-      .classList.add("animate__animated", "animate__slideInRight");
-  }
+  var observer = new IntersectionObserver(
+    intersectionCallback,
+    intersectionOptions
+  );
+
+  var target = document.querySelector(selector);
+  observer.observe(target);
 });
