@@ -191,8 +191,8 @@ window.addEventListener("load", function () {
       }
 
       self.setTimeout(() => {
-        cardHolder.scrollBy({
-          left: scrollWidth,
+        cardHolder.scrollTo({
+          left: scrollWidth * count,
           top: 0,
           behavior: "smooth",
         });
@@ -216,6 +216,21 @@ window.addEventListener("load", function () {
       }
     }
   }, 2500);
+
+  cardHolder.addEventListener("scroll", function () {
+    var index = cardHolder.scrollLeft / scrollWidth;
+    if (index <= 2) {
+      count = index;
+    }
+    var i = 0;
+    for (; i < cardNum; ++i) {
+      cards[i].classList.remove(
+        "animate__animated",
+        "animate__pulse",
+        "animate__pulseForSmile"
+      );
+    }
+  });
 
   /*** 소독 영상 에니메이션 */
 
