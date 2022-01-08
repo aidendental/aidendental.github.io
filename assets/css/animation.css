@@ -13,14 +13,16 @@
 
 @keyframes slideInRight {
     from{
-        transform: translate(3%, 0);
+        transform: translate(5%, 0);
+        opacity: 0;
     }
     to{
         transform: translate(0,0);
+        opacity: 1;
     }
 }
 .animate__slideInRight {
-    animation: slideInRight 1s;
+    animation: slideInRight 0.75s;
 }
 
 @keyframes pulseForSmile {
@@ -52,4 +54,18 @@
 
 .animate__pulse {
     animation: pulse 2s;
+}
+
+
+@keyframes slideHidden {
+    from{
+        transform: translate(0, -100%);
+    }
+    to{
+        transform: translate(0, 0);
+    }
+}
+
+.animate__slideHidden{
+    animation: slideHidden 1s;
 }
