@@ -38,6 +38,10 @@ article:not(:first-of-type){
   line-height: 150%;
 }
 
+.slider{
+  overflow: hidden;
+}
+
 /*********** 의사 프로필 ***********/
 
 #doctor-wrapper{
