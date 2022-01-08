@@ -56,7 +56,6 @@
     animation: pulse 2s;
 }
 
-
 @keyframes slideHidden {
     from{
         transform: translate(0, -100%);
