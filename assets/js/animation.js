@@ -80,6 +80,60 @@ window.addEventListener("load", function () {
 
   /*** 의사 프로필 애니메이션 효과 */
 
+  let doctorID = "#main-text";
+  function doctorIntersectionCallback(entries, observer) {
+    entries.forEach((entry) => {
+      var slideItems = document.querySelectorAll(".slide-item3");
+      var doctor = document.querySelector("#doctor");
+      var history = document.querySelector("#history");
+      var box = document.querySelector("#box");
+
+      if (entry.intersectionRatio >= 1) {
+        // 화면에 보일 때 글자 움직이기
+
+        // 환자가 미소짓는,행복한~
+        slideItems.forEach((target) => {
+          target.classList.add("animate__animated", "animate__slideHidden");
+        });
+
+        // 대표원장 이동인 대학병원 보철과~
+        doctor.style.opacity = 0;
+        doctor.style.setProperty("animation-delay", "1s");
+        doctor.classList.add("animate__animated", "animate__slideInRight");
+        self.setTimeout(() => {
+          doctor.style.opacity = 1;
+        }, 1750);
+
+        // 이력
+        history.style.opacity = 0;
+        history.style.setProperty("animation-delay", "1.75s");
+        history.classList.add("animate__animated", "animate__fadeIn");
+        self.setTimeout(() => {
+          history.style.opacity = 1;
+        }, 2500);
+
+        // 이력 뒤 푸른색 박스
+        box.classList.add("animate__animated", "animate__fullSlideInUp");
+      } else {
+        // 화면에 안 보일 때 글자 효과 초기화
+        slideItems.forEach((target) => {
+          target.classList.remove("animate__animated", "animate__slideHidden");
+        });
+        doctor.classList.remove("animate__animated", "animate__slideInRight");
+        history.classList.remove("animate__animated", "animate__fadeIn");
+        box.classList.remove("animate__animated", "animate__fullSlideInUp");
+      }
+    });
+  }
+
+  var doctortObserver = new IntersectionObserver(
+    doctorIntersectionCallback,
+    intersectionOptions
+  );
+
+  var doctor = document.querySelector(doctorID);
+  doctortObserver.observe(doctor);
+
   /*** 진료과목 애니메이션 효과 */
 
   let treatmentSubjectID = "#treatment-subject-text";
