@@ -68,3 +68,29 @@
 .animate__slideHidden{
     animation: slideHidden 1s;
 }
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.animate__fadeIn{
+    animation: fadeIn 1s;
+}
+
+
+@keyframes fullSlideInUp {
+    from {
+        transform: translate(0, 100%);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
+.animate__fullSlideInUp {
+    animation: fullSlideInUp 1s;
+}
