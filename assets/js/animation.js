@@ -217,6 +217,7 @@ window.addEventListener("load", function () {
     }
   }, 2500);
 
+  // 진료과목 사용자가 스크롤 시 거기부터 다시 스크롤 되도록 하기
   cardHolder.addEventListener("scroll", function () {
     var index = cardHolder.scrollLeft / scrollWidth;
     if (index <= 2) {
