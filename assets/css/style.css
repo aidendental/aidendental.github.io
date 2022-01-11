@@ -28,6 +28,10 @@ ul {
   list-style: none;
 }
 
+strong{
+  font-weight: 400;
+}
+
 
 /***** 스크롤바 커스텀 *****/
 

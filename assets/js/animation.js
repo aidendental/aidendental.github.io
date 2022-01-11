@@ -236,4 +236,49 @@ window.addEventListener("load", function () {
   /*** 소독 영상 에니메이션 */
 
   /*** 오시는 길 애니메이션 */
+
+  let locationID = "#location";
+  function locationIntersectionCallback(entries, observer) {
+    entries.forEach((entry) => {
+      var slideItems = document.querySelectorAll(".slide-item4");
+      var subText = document.querySelector("#smallWelcomeText");
+      var information = document.querySelector("#information");
+
+      if (entry.intersectionRatio >= 1) {
+        // 화면에 보일 때 글자 움직이기
+        slideItems.forEach((target) => {
+          target.classList.add("animate__animated", "animate__slideHidden");
+        });
+
+        subText.style.opacity = 0;
+        subText.style.setProperty("animation-delay", "1s");
+        subText.classList.add("animate__animated", "animate__slideInRight");
+        self.setTimeout(() => {
+          subText.style.opacity = 1;
+        }, 1100);
+
+        information.style.opacity = 0;
+        information.style.setProperty("animation-delay", "2s");
+        information.classList.add("animate__animated", "animate__fadeIn");
+        self.setTimeout(() => {
+          information.style.opacity = 1;
+        }, 2100);
+      } else {
+        // 화면에 안 보일 때 글자 효과 초기화
+        slideItems.forEach((target) => {
+          target.classList.remove("animate__animated", "animate__slideHidden");
+        });
+        subText.classList.remove("animate__animated", "animate__slideInRight");
+        information.classList.remove("animate__animated", "animate__fadeIn");
+      }
+    });
+  }
+
+  var locationObserver = new IntersectionObserver(
+    locationIntersectionCallback,
+    intersectionOptions
+  );
+
+  var location = document.querySelector(locationID);
+  locationObserver.observe(location);
 });

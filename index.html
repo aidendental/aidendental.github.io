@@ -65,10 +65,10 @@
             </div>
           </div>
           <div class="carousel-item">
-            <section style="position: absolute; z-index: 10; top: 27vh; right: 4vw;">
-              <section class="main-text" id="first-main-text">
+            <section style="position: absolute; z-index: 10; top: 24vh; right: 4vw;">
+              <section class="main-text" id="first-main-text" style="color: #555555">
                 <section class="slider">
-                  <section class="slide-item1">대학병원 보철과 교수 출신</section>
+                  <section class="slide-item1"><strong>대학병원 보철과 교수 출신</strong></section>
                 </section>
                 <section class="slider">
                   <section class="slide-item1">대표원장이 직접</section>
@@ -91,7 +91,7 @@
                   <section class="slide-item2">AIDEN</section>
                 </section>
                 <section class="slider">
-                  <section class="slide-item2">강하고, 단단하게.</section>
+                  <section class="slide-item2"><strong>강하고, 단단하게.</strong></section>
                 </section>
               </section>
               <section class="sub-text">
@@ -150,15 +150,18 @@
           <img src="images/index/doctor.png">
         </section>
         <img src="images/index/autograph.png" id="autograph"
-          style="position: absolute; z-index: 11; width: 15rem; object-fit: contain; right: 36vw; top: 41vh;">
+          style="position: absolute; z-index: 11; width: 15rem; object-fit: contain; right: 33vw; top: 41vh;">
+        <section style="position: absolute; z-index: 11; right: 26vw; bottom: 3vh; font-size: 1.4rem;">
+          강남에이든치과 대표원장 <strong>이동인</strong>
+        </section>
       </section>
       <div id="box"></div>
     </article>
 
     <!-- 진료과목 -->
     <article class="treatment-subject wrap">
-      <section id="treatment-subject-text" class="color-blue-gray" style="font-size: 5rem; line-height: 120%;">
-        강남에이든치과는 정확한 진단으로<br>철저한 치료계획 수립을 원칙으로 합니다
+      <section id="treatment-subject-text">
+        강남에이든치과는 정확한 진단으로<br><strong>철저한 치료계획</strong> 수립을 원칙으로 합니다
       </section>
       <section class="scrolling-wrapper-flexbox">
         <div class="card">
@@ -218,6 +221,11 @@
         </div>
       </section>
     </article>
+    <article style="padding-top: 0;">
+      <video muted autoplay loop>
+        <source src="images/index/main.mp4" type="video/mp4">
+      </video>
+    </article>
 
     <article id="roomVideoArticle">
       <section id="roomVideo">
@@ -258,41 +266,49 @@
         </script>
 
         <section id="locationText">
-          <section class="colorMain" style="font-size: 5.8rem; line-height: 110%;">
-            퇴근하고 오셔도 괜찮아요<br>매주 화/목 밤 8시 반까지
+          <section class="colorMain" style="font-size: 5.8rem; line-height: 110%; font-weight: 400;">
+            <section class="slider">
+              <section class="slide-item4">퇴근하고 오셔도 괜찮아요</section>
+            </section>
+            <section class="slider">
+              <section class="slide-item4">매주 화/목 밤 8시 반까지</section>
+            </section>
           </section>
           <section id="smallWelcomeText">
             평일 낮에 시간 내기 어려우신 여러분을 위해 야간진료를 하고 있습니다
           </section>
-          <section class="highlight">
-            <span>오시는길</span>
-          </section>
-          <section id="address">
-            서울 강남구 선릉로 578태정 빌딩 3F<br>
-            선정릉역 3번 출구 뒤돌아 도보 1분
-          </section>
 
-          <section class="highlight">
-            <span>진료시간</span>
+          <section id="information">
+            <section class="highlight">
+              <span>오시는길</span>
+            </section>
+            <section id="address">
+              서울 강남구 선릉로 578태정 빌딩 3F<br>
+              선정릉역 3번 출구 뒤돌아 도보 1분
+            </section>
+
+            <section class="highlight">
+              <span>진료시간</span>
+            </section>
+            <table id="timeTable">
+              <tr>
+                <td>월, 수, 금</td>
+                <td>오전 9:30 - 오후 6:30</td>
+              </tr>
+              <tr>
+                <td>화, 목</td>
+                <td>오전 9:30 - 오후 8:30</td>
+              </tr>
+              <tr>
+                <td>토 요 일</td>
+                <td>오전 9:30 - 오후 1:30</td>
+              </tr>
+              <tr>
+                <td>점심시간</td>
+                <td>오후 1:00 - 오후 2:00</td>
+              </tr>
+            </table>
           </section>
-          <table id="timeTable">
-            <tr>
-              <td>월, 수, 금</td>
-              <td>오전 9:30 - 오후 6:30</td>
-            </tr>
-            <tr>
-              <td>화, 목</td>
-              <td>오전 9:30 - 오후 8:30</td>
-            </tr>
-            <tr>
-              <td>토 요 일</td>
-              <td>오전 9:30 - 오후 1:30</td>
-            </tr>
-            <tr>
-              <td>점심시간</td>
-              <td>오후 1:00 - 오후 2:00</td>
-            </tr>
-          </table>
         </section>
       </section>
       <my-footer></my-footer>
