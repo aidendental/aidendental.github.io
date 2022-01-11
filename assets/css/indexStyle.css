@@ -168,63 +168,42 @@ article:not(:first-of-type){
   /************** 소독 영상 **********/
   
   #roomVideoArticle{
-    background-color: var(--background-color);
+    background-color: #f0f7f7;
+    display: grid;
+    grid-template-columns: 1fr 68% ;
+  }
+
+  #roomVideoArticle section:first-of-type{
+    padding: 6vh 0 0 6vw;
   }
   
   #roomVideo{
-    position: relative;
-    z-index: 5;
-    height: 60vh;
-    width:70vw;
+    object-fit: cover;
+    height: 75vh;
   }
 
-  #roomVideo video{
-    object-fit: contain;
-  }
-  
-  #videoTextBox{
-    position: relative;
-    z-index: 10;
-    height: 40vh;
-    width: 40vw;
-    background-color: #ffffff;
-    padding: 7vh 3vw 5vh 3.5vw;
-    top: -66vh;
-    right: -60vw;
-  }
-
-  #videoTextBox section:first-of-type{
+  .room-text{
     font-size: 4rem;
+    line-height: 140%;
+  }
+
+  .point{
+    padding: 2vh 4vw 2vh 0;
+  }
+
+  .point div:first-of-type{
+    font-size: 2rem;
     color: var(--blue-gray);
-    margin-bottom: 1rem;
-    line-height: 130%;
-  }
-  
-  #videoTextBox :last-child{
     line-height: 150%;
-    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .point div:last-of-type{
+    font-size: 1.4rem;
     color: #777777;
+    line-height: 120%;
   }
 
-  #deco{
-    position: relative;
-    width: 40vw;
-    height: 40vh;
-    border: double 4px #777777;
-    z-index: 3;
-    top: -93vh;
-    right: -45vw;
-  }
-
-  #deco2{
-    position: relative;
-    width: 8vw;
-    height: 13vh;
-    border: #ebe8e1 4px solid;
-    z-index: 0;
-    top: -100vh;
-    right: -81vw;
-  }
   
   /***********오시는길************/
   
