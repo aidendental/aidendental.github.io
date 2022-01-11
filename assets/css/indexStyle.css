@@ -29,7 +29,7 @@ article:not(:first-of-type){
 
 .main-text{
   font-size: 5rem; 
-  line-height: 120%; 
+  line-height: 150%;
   margin-bottom: 2vh;
 }
 
@@ -71,6 +71,7 @@ article:not(:first-of-type){
   #doctor{
     margin-top: 37vh;
     animation-delay: 0.5s;
+    font-weight: 400;
   }
   
   #doctor-name{
@@ -103,6 +104,9 @@ article:not(:first-of-type){
   
   #treatment-subject-text{
     padding: 0 0 2.2rem 0;
+    font-size: 5rem; 
+    line-height: 150%;
+    color: var(--blue-gray);
   }
   
   .scrolling-wrapper-flexbox {
@@ -145,6 +149,8 @@ article:not(:first-of-type){
   .card section:first-of-type{
     font-size: 2.2rem;
     margin: 2rem 0 0.8rem 0;
+    font-weight: 400;
+    color: #555555;
   }
 
   .card span{
