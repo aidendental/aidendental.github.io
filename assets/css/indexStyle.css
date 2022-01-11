@@ -201,7 +201,7 @@ article:not(:first-of-type){
   .point div:last-of-type{
     font-size: 1.4rem;
     color: #777777;
-    line-height: 120%;
+    line-height: 150%;
   }
 
   
