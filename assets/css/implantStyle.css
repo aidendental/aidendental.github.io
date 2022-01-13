@@ -1,13 +1,17 @@
-#typo{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    margin-bottom: 5rem;
-
-    color: var(--blue-gray);
-    font-size: 5.5rem;
-}
-
 .wrap{
     margin: 0 7rem 0 7rem;
+}
+
+#pictograms{
+    align-items: center;
+    display: table;
+    margin: 3.5rem auto 7.5rem auto;
+}
+
+.pictogram{
+    width: 11rem;
+    display: inline-block;
+    text-align: center;
+    margin: 0 1.5rem 0 1.5rem;
+    line-height: 150%;
 }
