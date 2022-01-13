@@ -82,8 +82,9 @@ article:not(:first-of-type){
   #history{
     display: grid;
     grid-template-columns: 40% 1fr;
-    margin-top: 6rem;
+    margin-top: 4.5rem;
     animation-delay: 1s;
+    line-height: 140%;
   }
   
   #box{
