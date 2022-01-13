@@ -59,10 +59,10 @@ article:not(:first-of-type){
 }
   
   #main-text{
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-bottom: 4.8rem;
     font-size: 8rem;
-    line-height: 110%;
+    line-height: 130%;
     z-index: 10;
     color: var(--main-color);
     position: absolute;
@@ -229,12 +229,13 @@ article:not(:first-of-type){
   }
   
   .highlight{
-    background-color: var(--highlight-color);
+    background-color: #e6f2f2;
     width: 11.2rem;
     height: 1.7rem;
     text-align: center;
 
     font-size: 2.4rem;
+    color: #555555;
   }
   
   .highlight span{
@@ -250,7 +251,7 @@ article:not(:first-of-type){
   #address{
     margin-top: 1.12rem;
     margin-bottom: 4rem;
-    line-height: 150%;
+    line-height: 165%;
 
     font-size: 1.8rem;
     color: #777777;
@@ -260,4 +261,5 @@ article:not(:first-of-type){
     margin-top: 1.12rem;
     font-size: 1.8rem;
     color: #777777;
+    line-height: 140%;
   }
