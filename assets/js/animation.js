@@ -78,7 +78,7 @@ window.addEventListener("load", function () {
   var secondMainText = document.querySelector(secondMainTextID);
   secondMainTextObserver.observe(secondMainText);
 
-  /*** 의사 프로필 애니메이션 효과 */
+  /*** 의사 프로필 애니메이션 효과 
 
   let doctorID = "#main-text";
   function doctorIntersectionCallback(entries, observer) {
@@ -134,22 +134,26 @@ window.addEventListener("load", function () {
   var doctor = document.querySelector(doctorID);
   doctortObserver.observe(doctor);
 
+  */
+
   /*** 진료과목 애니메이션 효과 */
 
-  let treatmentSubjectID = "#treatment-subject-text";
   function subjectIntersectionCallback(entries, observer) {
     entries.forEach((entry) => {
-      var targets = document.querySelectorAll(treatmentSubjectID);
+      var targets = document.querySelectorAll(".slide-item6");
 
       if (entry.intersectionRatio >= 1) {
         // 화면에 보일 때 글자 움직이기
         targets.forEach((target) => {
-          target.classList.add("animate__animated", "animate__slideInRight");
+          target.classList.add("animate__animated", "animate__fullSlideInUp");
         });
       } else {
         // 화면에 안 보일 때 글자 효과 초기화
         targets.forEach((target) => {
-          target.classList.remove("animate__animated", "animate__slideInRight");
+          target.classList.remove(
+            "animate__animated",
+            "animate__fullSlideInUp"
+          );
         });
       }
     });
@@ -160,7 +164,7 @@ window.addEventListener("load", function () {
     intersectionOptions
   );
 
-  var treatmentSubject = document.querySelector(treatmentSubjectID);
+  var treatmentSubject = document.querySelector(".treatment-subject");
   treatmentSubjectObserver.observe(treatmentSubject);
 
   /***
@@ -242,7 +246,7 @@ window.addEventListener("load", function () {
       if (entry.intersectionRatio >= 1) {
         // 화면에 보일 때 글자 움직이기
         slideItems.forEach((target) => {
-          target.classList.add("animate__animated", "animate__slideHidden");
+          target.classList.add("animate__animated", "animate__fullSlideInUp");
         });
         points.forEach((target) => {
           target.style.opacity = 0;
@@ -257,7 +261,10 @@ window.addEventListener("load", function () {
       } else {
         // 화면에 안 보일 때 글자 효과 초기화
         slideItems.forEach((target) => {
-          target.classList.remove("animate__animated", "animate__slideHidden");
+          target.classList.remove(
+            "animate__animated",
+            "animate__fullSlideInUp"
+          );
         });
         points.forEach((target) => {
           target.classList.remove("animate__animated", "animate__fadeIn");
@@ -286,7 +293,7 @@ window.addEventListener("load", function () {
       if (entry.intersectionRatio >= 1) {
         // 화면에 보일 때 글자 움직이기
         slideItems.forEach((target) => {
-          target.classList.add("animate__animated", "animate__slideHidden");
+          target.classList.add("animate__animated", "animate__fullSlideInUp");
         });
 
         subText.style.opacity = 0;
@@ -305,7 +312,10 @@ window.addEventListener("load", function () {
       } else {
         // 화면에 안 보일 때 글자 효과 초기화
         slideItems.forEach((target) => {
-          target.classList.remove("animate__animated", "animate__slideHidden");
+          target.classList.remove(
+            "animate__animated",
+            "animate__fullSlideInUp"
+          );
         });
         subText.classList.remove("animate__animated", "animate__slideInRight");
         information.classList.remove("animate__animated", "animate__fadeIn");
