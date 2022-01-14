@@ -45,6 +45,21 @@ strong{
   font-weight: 400;
 }
 
+.overline{
+  text-decoration: overline;
+}
+
+.underline{
+  border-bottom: solid 1px #333333;
+  line-height: 300%;
+}
+
+.text-dot{
+  text-emphasis-style: dot;
+  text-emphasis-position: over;
+  -webkit-text-emphasis-style: dot;
+  -webkit-text-emphasis-position: over;
+}
 
 /***** 스크롤바 커스텀 *****/
 
@@ -145,30 +160,30 @@ object{
 
 .text40{
   font-size: 4rem;
-  line-height: 120%;
+  line-height: 150%;
 }
 
 .text24{
   /* 24px */ 
   font-size:2.4rem;
-  line-height: 120%;
+  line-height: 150%;
 }
 
 .text20{
   font-size: 2rem;
-  line-height: 120%;
+  line-height: 150%;
 }
 
 .text18{
   /* 18px */
   font-size:1.8rem;
-  line-height: 120%;
+  line-height: 150%;
 }
 
 .text14{
   /* 14px */
   font-size:1.4rem;
-  line-height: 120%;
+  line-height: 150%;
 }
 
 .align-center{
