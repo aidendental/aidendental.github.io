@@ -10,9 +10,28 @@ html, body, #main{
 article{
   scroll-snap-align: start;
   height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 article:not(:first-of-type){
-  padding-top: 13vh;
+  padding-top: 10vh;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.overline{
+  text-decoration: overline;
+}
+
+.text-dot{
+  text-emphasis-style: dot;
+  text-emphasis-position: over;
+  -webkit-text-emphasis-style: dot;
+  -webkit-text-emphasis-position: over;
 }
 
 /***** 스크롤바 커스텀 *****/
@@ -46,68 +65,110 @@ article:not(:first-of-type){
 
 #doctor-wrapper{
   position: relative;
-}
-
-#doctor-profile{
-  display: grid;
-  grid-template-columns: 65% 1fr;
-  height: 87vh;
+  color: #818181;;
 }
 
 #doctor-image{
-  filter: drop-shadow(2rem 0 0.5rem rgba(0,0,0,.1));
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  width: 30%;
+  right: 0;
+  filter: drop-shadow(8rem 1.5rem 0 rgba(0,0,0,.05));
+}
+
+@media screen and (min-width: 1000px) {
+  #doctor-image{
+    width: 40rem;
+  }
+}
+
+#doctor-image img:first-of-type{
+  transform: translate(-20%, 20%);
+}
+
+/*
+#doctor-image img:last-of-type{
+  position: absolute; 
+  z-index: 11; 
+  width: 15rem; 
+  object-fit: contain; 
+  right: 33vw; 
+  top: 43vh;
+}
+
+#doctor-image section{
+  position: absolute; 
+  z-index: 11; 
+  bottom: 8vh; 
+  font-size: 1.4rem;
+  transform: translate(-70%, 0);
+}
+*/
+  
+#main-text{
+  margin-top: 3vh;
+  font-size: 3.8rem;
+  line-height: 140%;
+  color: var(--main-color);
+  font-family: 'GowunBatang-Regular';
+  letter-spacing: 0;
 }
   
-  #main-text{
-    margin-top: 5vh;
-    margin-bottom: 4.8rem;
-    font-size: 8rem;
-    line-height: 130%;
-    z-index: 10;
-    color: var(--main-color);
-    position: absolute;
-  }
+#doctor{
+  font-weight: 400;
+  font-size: 3.6rem;
+  color: #151515;
+  margin-bottom: 4rem;
+}
   
-  #doctor{
-    margin-top: 37vh;
-    animation-delay: 0.5s;
-    font-weight: 400;
-  }
-  
-  #doctor-name{
-    font-size: 3rem;
-    line-height: 200%;
-  }
-  
-  #history{
-    display: grid;
-    grid-template-columns: 40% 1fr;
-    margin-top: 4.5rem;
-    animation-delay: 1s;
-    line-height: 140%;
-  }
-  
-  #box{
-    position: absolute;
-    background-color: var(--background-color);
-    z-index: -10;
-    width: 100%;
-    height: 37vh;
-    bottom: 0;
-  }
-  
+#doctor span:last-of-type{
+  font-size: 4.5rem;
+  line-height: 170%;
+}
+
+#doctor section{
+  font-size: 2.8rem;
+  font-weight: 300;
+}
+
+hr{
+  width: 5rem;
+  background-color: #818181;
+}
+
+#papers{
+  margin: 15vh 2vw 1vh 2vw;
+  position: relative;
+  display: flex;
+}
+
+.paper-item{
+  width: 25%;
+  position: absolute;
+}
+
+#history{
+  margin-top: 4.5rem;
+  line-height: 180%;
+  font-size: 1.6rem;
+}
   
   /*************진료과목**************/
   
-  .treatment-subject{
-    margin-top: 5.5rem;
+  #category{
+    border-bottom: var(--main-color) 1px solid;
+    color: var(--main-color);
+    line-height: 180%;
+    font-weight: 400;
+    width: fit-content;
   }
   
   #treatment-subject-text{
-    padding: 0 0 2.2rem 0;
-    font-size: 5rem; 
+    padding: 2rem 0 2.2rem 0;
+    font-size: 3.5rem; 
     line-height: 150%;
-    color: var(--blue-gray);
+    color: #151515;
   }
   
   .scrolling-wrapper-flexbox {
@@ -115,8 +176,8 @@ article:not(:first-of-type){
     flex-wrap: nowrap;
     overflow-x: auto;
 
-    margin-top: 3vh;
-    height: 53vh;
+    margin-top: 2vh;
+    height: 56vh;
     width: 100%;
     -webkit-overflow-scrolling: touch;
 
@@ -142,21 +203,16 @@ article:not(:first-of-type){
 
     scroll-snap-align: start;
   }
-  
-  .card section{
-    margin-bottom: 0.48rem;
-  }
 
   .card section:first-of-type{
-    font-size: 2.2rem;
-    margin: 2rem 0 0.8rem 0;
-    font-weight: 400;
-    color: #555555;
+    font-size: 2.5rem;
+    margin: 2.5rem 0 2rem 0;
+    color: #151515;
   }
 
   .card span{
-    font-size: 1.6rem;
-    line-height: 120%;
+    font-size: 1.8rem;
+    line-height: 150%;
     color: #777777;
   }
   
@@ -165,22 +221,36 @@ article:not(:first-of-type){
     overflow: hidden;
     border-radius: 1rem;
   }
-  
-  /************** 소독 영상 **********/
-  
-  #roomVideoArticle{
-    background-color: #f0f7f7;
-    display: grid;
-    grid-template-columns: 1fr 68% ;
+
+  /************** 원장님 인터뷰 **********/
+  #interview{
+    background-color: #f7f7f7;
   }
 
-  #roomVideoArticle section:first-of-type{
-    padding: 5vh 0 0 6vw;
+  #interview video{
+    height: 75vh;
+  }
+  
+  /************** 소독 영상 **********/
+  #roomVideoArticle{
+    position: relative;
   }
   
   #roomVideo{
     object-fit: cover;
     height: 75vh;
+  }
+
+  #roomVideoArticle section:last-of-type{
+    position: absolute;
+    z-index: 10;
+    background-color: #ffffff;
+    background-color: rgba( 255, 255, 255, 0.5 );
+    top: 10vh;
+    right: 5vw;
+    height: 75vh;
+    width: 30vw;
+    padding: 5vh 3vw 0 3vw;
   }
 
   .room-text{
@@ -190,7 +260,7 @@ article:not(:first-of-type){
   }
 
   .point{
-    padding: 2vh 4vw 2vh 0;
+    padding: 2vh 0 2vh 0;
   }
 
   .point div:first-of-type{
@@ -217,41 +287,47 @@ article:not(:first-of-type){
   #location{
     display: grid;
     grid-template-columns: 38.9% 1fr;
-    margin-bottom: 5rem;
   }
-  
+
+  #location img{
+    position: absolute;
+    z-index: -1;
+    width: 28vw;
+    object-fit: contain;
+    right: 7vw;
+    bottom: 0;
+  }
+
+  #locationText{
+    padding-left: 5vw;
+    font-size: 3rem;
+    color: #151515;
+    line-height: 150%;
+  }
+
+  .slide-item4{
+    font-size: 4rem;
+    line-height: 150%;
+  }
+ 
   #smallWelcomeText{
     margin-top: 2rem;
     margin-bottom: 7.2rem;
     animation-delay: 0.3s;
 
-    font-size: 1.8rem;
-    color: #777777;
+    font-size: 3rem;
+    color: var(--main-color);
+    font-family: 'GowunBatang-Regular';
+    line-height: 150%;
   }
-  
-  .highlight{
-    background-color: #e6f2f2;
-    width: 11.2rem;
-    height: 1.7rem;
-    text-align: center;
 
-    font-size: 2.4rem;
-    color: #555555;
-  }
-  
-  .highlight span{
-    position: relative;
-    top : -0.7rem;
-  }
-  
-  #locationText{
-    padding-left: 5vw;
-    padding-top: 3vh;
+  #information{
+    margin-top: 2rem;
   }
   
   #address{
     margin-top: 1.12rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     line-height: 165%;
 
     font-size: 1.8rem;

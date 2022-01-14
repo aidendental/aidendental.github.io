@@ -9,8 +9,8 @@
 <head>
   <title>강남에이든치과</title>
   <meta charset="utf-8" />
-  <!--<meta name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />-->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
   <meta name="keywords"
     content="에이든치과, aiden치과의원, 선전릉역치과, 강남역치과, 근처치과, 서울치과, 치과야간진료, 양심치과, 라미네이트, 연예인라미네이트, 임플란트가격, 오스템임플란트, 치아미백, 치아교정, 교정치과, 클리피씨교정, 충치치료, 사랑니, 이동인 원장, 건강한 웃음, 치아 변색, 라미네이트, 전문의, 덴티스트, 방송 출연 명의" />
 
@@ -34,7 +34,7 @@
   <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=bbvgfz9esz"></script>
   <script type="module" src="/assets/js/menu.js"></script>
   <script type="text/javascript" src="/assets/js/animation.js"></script>
-
+  <script type="text/javascript" src="assets/js/href.js"></script>
 </head>
 
 <body class="is-preload">
@@ -65,7 +65,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <section style="position: absolute; z-index: 10; top: 24vh; right: 4vw;">
+            <section style="position: absolute; z-index: 10; top: 24vh; right: 5vw;">
               <section class="main-text" id="first-main-text" style="color: #555555">
                 <section class="slider">
                   <section class="slide-item1"><strong>대학병원 보철과 교수 출신</strong></section>
@@ -104,64 +104,84 @@
       </div>
     </article>
     <article id="doctor-wrapper">
-      <section id="doctor-profile" class="wrap">
-        <section>
-          <section id="main-text">
-            <section class="slider">
-              <section class="slide-item3">환자가 미소짓는,</section>
-            </section>
-            <section class="slider">
-              <section class="slide-item3">행복한 치과를 꿈꿉니다</section>
-            </section>
-          </section>
-          <section id="doctor">
-            <span class="text24">대표원장</span>
-            <span id="doctor-name">이동인<br></span>
-            <section class="text20">대학 병원 보철과 교수 출신 전문의</section>
-          </section>
-          <section id="history" class="text14">
-            <span>
-              보건복지부 인정 치과보철과 전문의<br>
-              대한치과보철학회 치과보철과 인정의<br>
-              <br>
-              前) 순천향대병원 치과보철과 조교수<br>
-              現) 순천향대병원 외래교수<br>
-              <br>
-              치의학 석사 학위 취득<br>
-              국군일동병원 치과보철과장<br>
-              6사단의무대 치과반장<br>
-            </span>
-            <span>
-              대한치과보철학회 정회원<br>
-              대한구강악안면임플란트학회 정회원<br>
-              대한심미치과학회 정회원<br>
-              <br>
-              턱관절장애교육연구회 교육 수료<br>
-              Academy of Osseointegration(미국골유착학회) poster prensentation<br>
-              International College of Prothodontists(국제보철학회) poster presentation<br>
-              Advanced T-scan Occlusal Adjustment Course<br>
-              <br>
-              오스템 임플란트 마스터 코스 연자 및 자문위원<br>
-              덴티움 Clinical Research Center<br>
-            </span>
-          </section>
+      <section class="wrap">
+        <section id="doctor">
+          <span>대표원장</span>
+          <span>이 동 인<br></span>
+          <section>대학 병원 보철과 교수 출신 전문의</section>
         </section>
-        <section id="doctor-image">
-          <img src="images/index/doctor.png">
+        <section id="main-text">
+          <div class="slider">
+            <div class="slide-item3">&nbsp;"환자가 미소짓는,</div>
+          </div>
+          <div class="slider">
+            <div class="slide-item3">행복한 치과를 꿈꿉니다."</div>
+          </div>
         </section>
-        <img src="images/index/autograph.png" id="autograph"
-          style="position: absolute; z-index: 11; width: 15rem; object-fit: contain; right: 33vw; top: 41vh;">
-        <section style="position: absolute; z-index: 11; right: 26vw; bottom: 3vh; font-size: 1.4rem;">
-          강남에이든치과 대표원장 <strong>이동인</strong>
-        </section>
+        <hr>
+        <span>상이랑 임명장 설명 문구</span>
       </section>
-      <div id="box"></div>
+      <section id="papers">
+        <div class="paper-item">
+          <img src="images/index/implant.JPG">
+        </div>
+        <div class="paper-item" style="left: 10%; z-index: 1;">
+          <img src="images/index/implant.JPG">
+        </div>
+        <div class="paper-item" style="left: 20%; z-index: 2;">
+          <img src="images/index/implant.JPG">
+        </div>
+        <div class="paper-item" style="left: 30%; z-index: 3;">
+          <img src="images/index/implant.JPG">
+        </div>
+        <div class="paper-item" style="left: 40%; z-index: 4;">
+          <img src="images/index/implant.JPG">
+        </div>
+      </section>
+      <section id="doctor-image">
+        <img src="images/index/doctor2.png">
+      </section>
+      <section
+        style="position: absolute; width: 100%; top: 13vh; left: 40vw; height: 45vh; background-image: url('/images/index/aiden.png' ); background-position: 0% 50%; background-size: contain; background-repeat: no-repeat; opacity: 0.5;">
+      </section>
+    </article>
+
+    <article>
+      <section id="history" class="wrap">
+        보건복지부 인정 치과보철과 전문의<br>
+        대한치과보철학회 치과보철과 인정의<br>
+        <br>
+        前) 순천향대병원 치과보철과 조교수<br>
+        現) 순천향대병원 외래교수<br>
+        <br>
+        치의학 석사 학위 취득<br>
+        국군일동병원 치과보철과장<br>
+        6사단의무대 치과반장<br>
+
+        대한치과보철학회 정회원<br>
+        대한구강악안면임플란트학회 정회원<br>
+        대한심미치과학회 정회원<br>
+        <br>
+        턱관절장애교육연구회 교육 수료<br>
+        Academy of Osseointegration(미국골유착학회) poster prensentation<br>
+        International College of Prothodontists(국제보철학회) poster presentation<br>
+        Advanced T-scan Occlusal Adjustment Course<br>
+        <br>
+        오스템 임플란트 마스터 코스 연자 및 자문위원<br>
+        덴티움 Clinical Research Center<br>
+      </section>
     </article>
 
     <!-- 진료과목 -->
     <article class="treatment-subject wrap">
+      <div id="category">진료과목 소개</div>
       <section id="treatment-subject-text">
-        강남에이든치과는 정확한 진단으로<br><strong>철저한 치료계획</strong> 수립을 원칙으로 합니다
+        <div class="slider">
+          <div class="slide-item6">강남에이든치과는 <strong>정확한 진단</strong>으로</div>
+        </div>
+        <div class="slider">
+          <div class="slide-item6"><strong>철저한 치료계획</strong> 수립을 원칙으로 합니다</div>
+        </div>
       </section>
       <section class="scrolling-wrapper-flexbox">
         <div class="card">
@@ -170,7 +190,7 @@
               style="background-image: url('images/index/implant.JPG'); background-position: 50% 50%; background-size: 100%;">
             </div>
             <section>
-              최소절개, 최소통증, 빠른 회복 임플란트
+              최소절개, 최소통증, 빠른 회복 <strong>임플란트</strong>
             </section>
             <span>풍부한 임상경험을 바탕으로 빠르고 정확하게 수술합니다<br></span>
           </a>
@@ -181,7 +201,7 @@
               style="background-image: url('images/index/denture2.png'); background-position: 50% 50%; background-size: 100%;">
             </div>
             <section>
-              보철치료 틀니는 보철과 전문의에게
+              보철치료 <strong>틀니</strong>는 보철과 전문의에게
             </section>
             <span>대학 교수 보철과 전문의의 전문분야 틀니<br>풍부한 임상경험으로 보다 편하게 제작해드립니다<br></span>
           </a>
@@ -192,18 +212,18 @@
               style="background-image: url('images/index/laminate.JPG'); background-position: 50% 50%; background-size: 100%;">
             </div>
             <section>
-              건강하게 자신감 있는 웃음, 라미네이트
+              건강하게 자신감 있는 웃음, <strong>라미네이트</strong>
             </section>
             <span>먼 훗날까지 생각하여 안전하고 건강하게 시술합니다<br></span>
           </a>
         </div>
         <div class="card">
-          <a href="aesthetic-therapy.html">
-            <div class="cardImg"
+          <a href="aesthetic-therapy.html" onclick="clickWhitening();">
+            <div class=" cardImg"
               style="background-image: url('/images/index/whitening.png'); background-position: 45% 50%; background-size: 140%;">
             </div>
             <section>
-              시리지 않는 건강한 치아/잇몸 미백
+              시리지 않는 건강한 <strong>치아/잇몸 미백</strong>
             </section>
             <span>이 손상 없이 치아의 자신감을 되찾아드립니다<br></span>
           </a>
@@ -214,20 +234,24 @@
               style="background-image: url('images/index/TMJ2.png'); background-position: 50% 50%; background-size: 100%;">
             </div>
             <section>
-              보험적용으로 걱정없는 턱관절치료
+              보험적용으로 걱정없는 <strong>턱관절치료</strong>
             </section>
             <span>턱관절 통증과 치료비 부담을 덜어드립니다<br></span>
           </a>
         </div>
       </section>
     </article>
-    <article style="padding-top: 0;">
+    <article id="interview">
       <video muted autoplay loop>
         <source src="images/index/main.mp4" type="video/mp4">
       </video>
     </article>
 
     <article id="roomVideoArticle">
+      <section>
+        <video autoplay loop muted src="images/index/cleansing.mp4" type="video/mp4" id="roomVideo"></video>
+      </section>
+
       <section>
         <div class="room-text">
           <div class="slider">
@@ -242,7 +266,7 @@
         </div>
         <div class="point">
           <div>
-            01<br>
+            <span class="overline">01<br></span>
             프라이빗한 개별 진료실<br>
           </div>
           <div>
@@ -253,7 +277,7 @@
         </div>
         <div class="point">
           <div>
-            02<br>
+            <span class="overline">02<br></span>
             틈 없이 완벽한 소독<br>
           </div>
           <div>
@@ -263,9 +287,7 @@
         </div>
       </section>
 
-      <section>
-        <video autoplay loop muted src="images/index/cleansing.mp4" type="video/mp4" id="roomVideo"></video>
-      </section>
+
     </article>
 
     <article>
@@ -288,50 +310,55 @@
         </script>
 
         <section id="locationText">
-          <section class="colorMain" style="font-size: 5.8rem; line-height: 130%; ">
-            <section class="slider">
-              <section class="slide-item4">퇴근하고 오셔도 괜찮아요</section>
-            </section>
-            <section class="slider">
-              <section class="slide-item4">매주 <strong>화/목 밤 8시 반</strong>까지</section>
-            </section>
+          <section>
+            <div class="slider">
+              <div class="slide-item4">퇴근하고 오셔도 괜찮아요</div>
+            </div>
+            <div class="slider">
+              <div class="slide-item4">매주 <strong>화/목 밤 8시 반</strong>까지</div>
+            </div>
           </section>
+          <!--
           <section id="smallWelcomeText">
-            평일 낮에 시간 내기 어려우신 여러분을 위해 야간진료를 하고 있습니다
+            평일 낮에 시간 내기 어려우신 여러분을 위해<br> 야간진료를 하고 있습니다
           </section>
+          -->
 
           <section id="information">
-            <section class="highlight">
-              <span>오시는길</span>
+            <section>
+              오시는길
             </section>
-            <section id="address">
+            <div id="address">
               서울 강남구 선릉로 578태정 빌딩 3F<br>
               선정릉역 3번 출구 뒤돌아 도보 1분
-            </section>
+            </div>
+            <section>02-539-2112<br><br></section>
 
-            <section class="highlight">
-              <span>진료시간</span>
+            <section>
+              진료시간
             </section>
             <table id="timeTable">
               <tr>
                 <td>월, 수, 금</td>
-                <td>오전 9:30 - 오후 6:30</td>
+                <td>오전 9 : 30 - 오후 6 : 30</td>
               </tr>
               <tr>
                 <td>화, 목</td>
-                <td>오전 9:30 - 오후 8:30</td>
+                <td>오전 9 : 30 - 오후 8 : 30</td>
               </tr>
               <tr>
                 <td>토 요 일</td>
-                <td>오전 9:30 - 오후 1:30</td>
+                <td>오전 9 : 30 - 오후 1 : 30</td>
               </tr>
               <tr>
                 <td>점심시간</td>
-                <td>오후 1:00 - 오후 2:00</td>
+                <td>오후 1 : 00 - 오후 2 : 00</td>
               </tr>
             </table>
           </section>
         </section>
+
+        <img src="images/index/map.png">
       </section>
       <my-footer></my-footer>
     </article>
