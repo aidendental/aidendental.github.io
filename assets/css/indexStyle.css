@@ -23,17 +23,6 @@ footer{
   width: 100%;
 }
 
-.overline{
-  text-decoration: overline;
-}
-
-.text-dot{
-  text-emphasis-style: dot;
-  text-emphasis-position: over;
-  -webkit-text-emphasis-style: dot;
-  -webkit-text-emphasis-position: over;
-}
-
 /***** 스크롤바 커스텀 *****/
 
 ::-webkit-scrollbar {
