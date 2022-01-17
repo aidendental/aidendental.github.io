@@ -3,10 +3,26 @@ table td{
     padding: 0 0 0 0;
 }
 
-table td:first-child{
+table td:first-of-type{
     width: 50%;
 }
 
 .text{
     padding: 0 7rem 0 7rem;
+    margin-top: auto;
+}
+
+.table section{
+    display: grid;
+    margin-bottom: 10vh;
+}
+
+.table section:nth-of-type(2n+1){
+    grid-template-columns: 60% 1fr;
+}
+
+
+.table section:nth-of-type(2n){
+    grid-template-columns: 40% 1fr;
+    text-align: right;
 }
