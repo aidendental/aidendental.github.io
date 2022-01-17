@@ -239,6 +239,12 @@ video{
   height: 90vh;
 }
 
+/***** 메인화면 모바일용 크기 조정****/
+@media screen and (max-width: 900px){
+  .main-img{
+    height: 50vh;
+  }
+}
 
 .hasBackgroundColor{
   background-color: var(--background-color);
