@@ -307,3 +307,19 @@ video{
     font-size: 2rem;
   }
 }
+
+/***** 메인화면 모바일용 글자크기 조정****/
+@media screen and (max-width: 900px){
+  .worth{
+    font-size: 1.6rem;
+  }
+
+  .worth-text{
+    font-size: 2.3rem;
+  }
+
+  .worth-explain{
+    font-size: 1.6rem;
+  }
+
+}
