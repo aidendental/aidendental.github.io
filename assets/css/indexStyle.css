@@ -34,6 +34,21 @@ footer{
   height: 100vh;
 }
 
+/***** 메인화면 모바일용 글자크기 조정****/
+@media screen and (max-width: 900px){
+  .main-text{
+    font-size: 3rem;
+  }
+
+  .sub-text{
+    font-size: 1.6rem;
+  }
+
+  #first-main-text{
+    margin-top: 40vh;
+  }
+}
+
 /*********** 의사 프로필 ***********/
 
 #doctor-wrapper{
@@ -45,39 +60,14 @@ footer{
   position: absolute;
   z-index: 10;
   bottom: 0;
-  width: 30%;
+  width: 40rem;
   right: 0;
   filter: drop-shadow(8rem 1.5rem 0 rgba(0,0,0,.05));
-}
-
-@media screen and (min-width: 1000px) {
-  #doctor-image{
-    width: 40rem;
-  }
 }
 
 #doctor-image img:first-of-type{
   transform: translate(-20%, 20%);
 }
-
-/*
-#doctor-image img:last-of-type{
-  position: absolute; 
-  z-index: 11; 
-  width: 15rem; 
-  object-fit: contain; 
-  right: 33vw; 
-  top: 43vh;
-}
-
-#doctor-image section{
-  position: absolute; 
-  z-index: 11; 
-  bottom: 8vh; 
-  font-size: 1.4rem;
-  transform: translate(-70%, 0);
-}
-*/
   
 #main-text{
   margin-top: 3vh;
@@ -121,10 +111,83 @@ hr{
   position: absolute;
 }
 
+.paper-item:nth-of-type(2){
+  left: 10%; 
+  z-index: 1;
+}
+
+.paper-item:nth-of-type(3){
+  left: 20%;
+  z-index: 2;
+}
+
+.paper-item:nth-of-type(4){
+  left: 30%;
+  z-index: 2;
+}
+
+.paper-item:nth-of-type(5){
+  left: 40%;
+  z-index: 2;
+}
+
 #history{
   margin-top: 4.5rem;
   line-height: 180%;
   font-size: 1.6rem;
+}
+
+/***** 메인화면 모바일용 글자크기 조정****/
+@media screen and (max-width: 900px){
+  #doctor{
+    font-size: 2.3rem;
+  }
+
+  #doctor span:last-of-type{
+    font-size: 2.6rem;
+  }
+
+  #doctor section{
+    font-size: 2.3rem;
+  }
+
+  #main-text{
+    font-size: 2.3rem;
+  }
+
+  #doctor-image{
+    width: 50%;
+    filter: drop-shadow(5rem 1.5rem 0 rgba(0,0,0,.05));
+  }
+
+  #doctor-image img:first-of-type{
+    transform: translate(0,0);
+  }
+
+  #papers{
+    margin: 7%;
+  }
+
+  .paper-item{
+    width: 40%;
+  }
+  .paper-item:nth-of-type(2){
+    left: 0%;
+    top: 7vh;
+  }
+
+  .paper-item:nth-of-type(3){
+    left: 0%;
+    top: 14vh;
+  }
+  .paper-item:nth-of-type(4){
+    left: 0%;
+    top: 21vh;
+  }
+  .paper-item:nth-of-type(5){
+    left: 0%;
+    top: 28vh;
+  }
 }
   
   /*************진료과목**************/
@@ -195,6 +258,33 @@ hr{
     border-radius: 1rem;
   }
 
+/***** 메인화면 모바일용 글자크기 조정****/
+@media screen and (max-width: 900px){
+  #category{
+    margin-top: 10vh;
+  }
+
+  #treatment-subject-text{
+    font-size: 2.6rem;
+  }
+
+  .card{
+    width: 70%;
+  }
+
+  .cardImg{
+    height: 20rem;
+  }
+
+  .card section:first-of-type{
+    font-size: 2rem;
+  }
+
+  .card span{
+    font-size: 1.4rem;
+  }
+}
+
   /************** 원장님 인터뷰 **********/
   #interview{
     background-color: #f7f7f7;
@@ -232,6 +322,10 @@ hr{
     margin-bottom: 2rem;
   }
 
+  .room-text-mobile{
+    display: none;
+  }
+
   .point{
     padding: 2vh 0 2vh 0;
   }
@@ -249,7 +343,36 @@ hr{
     line-height: 150%;
   }
 
-  
+  /***** 메인화면 모바일용 글자크기 조정****/
+  @media screen and (max-width: 900px){
+    #roomVideoArticle section:last-of-type{
+      padding: 0 5%;
+      right: 0;
+      top: 40vh;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0);
+      text-align: center;
+    }
+
+    .room-text{
+      display: none;
+    }
+
+    .room-text-mobile{
+      display: block;
+      font-size: 3rem;
+      line-height: 150%;
+      margin-bottom: 2rem;
+      color: white;
+    }
+
+    .point{
+     display: none;
+    }
+  }
+
+
+
   /***********오시는길************/
   
   #map{
@@ -313,3 +436,61 @@ hr{
     color: #777777;
     line-height: 140%;
   }
+
+  /***** 메인화면 모바일용 글자크기 조정****/
+  @media screen and (max-width: 900px){
+    #location{
+      display: block;
+    }
+    
+    #map{
+      width: 100%;
+      height: 35vh;
+    }
+
+    .slide-item4{
+      display: none;
+    }
+
+    #information{
+      font-size: 2.4rem;
+    }
+
+    #address{
+      font-size: 1.6rem;
+      margin: 0.5rem 0;
+    }
+
+    #timeTable{
+      font-size: 1.6rem;
+      margin: 0.5rem 0;
+      line-height: 120%;
+      margin: 0;
+    }
+
+    #location img{
+      width: 50%;
+      top: 15vh;
+    }
+
+    .pc{
+      display: none;
+    }
+  }
+
+/***** 메인화면 모바일용 글자크기 조정****/
+@media screen and (max-width: 900px){
+  #footer{
+    grid-template-columns: 30% 1fr;
+    height: 8rem;
+  }
+
+  #footer p{
+    display: block;
+    line-height: 120%;
+  }
+
+  #footer section{
+    margin: auto 3rem;
+  }
+}
