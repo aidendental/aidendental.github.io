@@ -23,15 +23,16 @@
     <script type="module" src="/assets/js/menu.js"></script>
 </head>
 
-<body>
-    <my-header></my-header>
-    <flags-bar></flags-bar>
+<body class="is-preload">
+    <div data-include-path="header.html"></div>
+    <div data-include-path="flags-bar.html"></div>
     <div id="connecting">
-        <naver-booking></naver-booking>
-        <kakao-connecting></kakao-connecting>
-        <naver-blog></naver-blog>
-        <insta-connecting></insta-connecting>
+        <div data-include-path="naver-booking.html"></div>
+        <div data-include-path="kakao.html"></div>
+        <div data-include-path="naver-blog.html"></div>
+        <div data-include-path="insta.html"></div>
     </div>
+    <div data-include-path="menu.html"></div>
 
     <article>
         <section id="main-text">
@@ -181,7 +182,7 @@
             호전율이 좋으려면 병원을 꾸준히 방문해주셔야 합니다
         </section>
     </article>
-    <my-footer></my-footer>
+    <div data-include-path="footer.html"></div>
 </body>
 
 </html>

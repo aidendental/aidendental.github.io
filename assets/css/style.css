@@ -80,31 +80,25 @@ strong{
 
 /***** nav bar *****/
 
-my-header{
+#my-header{
   position: fixed;
   z-index: 100;
   width: 100%;
   margin-left: 3rem;
   display: grid;
-  grid-template-columns: 20% 1fr;
+  grid-template-columns: 20rem 1fr;
 }
 
-@media screen and (min-width: 1000px) {
-  my-header{
-      grid-template-columns: 20rem 1fr;
-  }
-}
-
-my-header img{
+#my-header img{
   object-fit: contain;
 }
 
-my-header div{
+#my-header div{
   padding-top: 3rem;
   margin-left: 2rem;
 }
 
-my-header li{
+#my-header li{
     display: inline-block;
     top:50%;
     font-size: 1.7rem;
@@ -114,14 +108,18 @@ my-header li{
 }
 
 @media screen and (max-width: 900px){
-  my-header ul{
+  #my-header ul{
     display: none;
+  }
+  #my-header{
+    height: 8rem;
+    align-items: center;
   }
 }
 
 /** 언어 선택 **/
 
-flags-bar{
+#flags-bar{
   position: fixed;
   z-index: 10;
   margin-left: 3rem;
@@ -150,11 +148,11 @@ flags-bar{
   width: 10rem;
 }
 
-object{
-  height: 4.5rem;
-  width: 10rem;
+#connecting img{
+    object-fit: contain;
+    width: 100%;
+    filter: drop-shadow(0px 2.5px 1.5px rgba(0,0,0,0.2));
 }
-
 
 /********* 글자 클래스 *******/
 
@@ -277,7 +275,6 @@ video{
 #footer section{
   margin: 3.2rem 0 0 3rem;
 }
-
 
 .worth{
   font-size: 2rem;

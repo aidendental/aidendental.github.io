@@ -23,18 +23,19 @@
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
 
-    <script type="module" src="/assets/js/menu.js"></script>
+    <script type="text/javascript" src="assets/js/menu.js"></script>
 </head>
 
 <body>
-    <my-header></my-header>
-    <flags-bar></flags-bar>
+    <div data-include-path="header.html"></div>
+    <div data-include-path="flags-bar.html"></div>
     <div id="connecting">
-        <naver-booking></naver-booking>
-        <kakao-connecting></kakao-connecting>
-        <naver-blog></naver-blog>
-        <insta-connecting></insta-connecting>
+        <div data-include-path="naver-booking.html"></div>
+        <div data-include-path="kakao.html"></div>
+        <div data-include-path="naver-blog.html"></div>
+        <div data-include-path="insta.html"></div>
     </div>
+    <div data-include-path="menu.html"></div>
 
     <article>
         <section style="position: absolute; z-index: 10; top: 23vh; left: 6vw;">
@@ -229,7 +230,7 @@
             </section>
         </section>
     </article>
-    <my-footer></my-footer>
+    <div data-include-path="footer.html"></div>
 </body>
 
 </html>

@@ -30,15 +30,17 @@
     <script type="module" src="/assets/js/menu.js"></script>
 </head>
 
-<body>
-    <my-header></my-header>
-    <flags-bar></flags-bar>
+<body class="is-preload">
+    <div data-include-path="header.html"></div>
+    <div data-include-path="flags-bar.html"></div>
     <div id="connecting">
-        <naver-booking></naver-booking>
-        <kakao-connecting></kakao-connecting>
-        <naver-blog></naver-blog>
-        <insta-connecting></insta-connecting>
+        <div data-include-path="naver-booking.html"></div>
+        <div data-include-path="kakao.html"></div>
+        <div data-include-path="naver-blog.html"></div>
+        <div data-include-path="insta.html"></div>
     </div>
+    <div data-include-path="menu.html"></div>
+
     <img src="images/total-image/main.JPG" class="main-img">
 
     <ul class="subText tabs">
@@ -379,7 +381,7 @@
             </article>
         </div>
     </div>
-    <my-footer></my-footer>
+    <div data-include-path="footer.html"></div>
 </body>
 
 </html>

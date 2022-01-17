@@ -32,20 +32,22 @@
 
   <!-- 네이버 지도 -->
   <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=bbvgfz9esz"></script>
-  <script type="module" src="/assets/js/menu.js"></script>
   <script type="text/javascript" src="/assets/js/animation.js"></script>
   <script type="text/javascript" src="assets/js/href.js"></script>
+  <script type="text/javascript" src="assets/js/menu.js"></script>
 </head>
 
 <body class="is-preload">
-  <my-header></my-header>
-  <flags-bar></flags-bar>
+  <div data-include-path="header.html"></div>
+  <div data-include-path="flags-bar.html"></div>
   <div id="connecting">
-    <naver-booking></naver-booking>
-    <kakao-connecting></kakao-connecting>
-    <naver-blog></naver-blog>
-    <insta-connecting></insta-connecting>
+    <div data-include-path="naver-booking.html"></div>
+    <div data-include-path="kakao.html"></div>
+    <div data-include-path="naver-blog.html"></div>
+    <div data-include-path="insta.html"></div>
   </div>
+  <div data-include-path="menu.html"></div>
+
   <!-- Main -->
   <div id="main">
     <article>
@@ -125,16 +127,16 @@
         <div class="paper-item">
           <img src="images/index/implant.JPG">
         </div>
-        <div class="paper-item" style="left: 10%; z-index: 1;">
+        <div class="paper-item">
           <img src="images/index/implant.JPG">
         </div>
-        <div class="paper-item" style="left: 20%; z-index: 2;">
+        <div class="paper-item">
           <img src="images/index/implant.JPG">
         </div>
-        <div class="paper-item" style="left: 30%; z-index: 3;">
+        <div class="paper-item">
           <img src="images/index/implant.JPG">
         </div>
-        <div class="paper-item" style="left: 40%; z-index: 4;">
+        <div class="paper-item">
           <img src="images/index/implant.JPG">
         </div>
       </section>
@@ -264,6 +266,14 @@
             <div class="slide-item5">생각합니다</div>
           </div>
         </div>
+        <div class="room-text-mobile">
+          <div class="slider">
+            <div class="slide-item5">강남에이든치과는 환자를</div>
+          </div>
+          <div class="slider">
+            <div class="slide-item5"> <strong>최우선</strong>으로 생각합니다</div>
+          </div>
+        </div>
         <div class="point">
           <div>
             <span class="overline">01<br></span>
@@ -332,7 +342,9 @@
               서울 강남구 선릉로 578태정 빌딩 3F<br>
               선정릉역 3번 출구 뒤돌아 도보 1분
             </div>
-            <section>02-539-2112<br><br></section>
+            <section>02-539-2112
+              <span class="pc"><br><br></span>
+            </section>
 
             <section>
               진료시간
@@ -360,7 +372,7 @@
 
         <img src="images/index/map.png">
       </section>
-      <my-footer></my-footer>
+      <div data-include-path="footer.html"></div>
     </article>
 
   </div>
