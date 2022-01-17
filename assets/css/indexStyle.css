@@ -34,22 +34,6 @@ footer{
   height: 100vh;
 }
 
-
-.main-text{
-  font-size: 5rem; 
-  line-height: 150%;
-  margin-bottom: 2vh;
-}
-
-.sub-text{
-  font-size: 2.5rem; 
-  line-height: 150%;
-}
-
-.slider{
-  overflow: hidden;
-}
-
 /*********** 의사 프로필 ***********/
 
 #doctor-wrapper{

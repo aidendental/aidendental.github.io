@@ -35,3 +35,45 @@
 .step img{
     height: 20rem;
 }
+
+#insurance-summary ul li:before{
+    content: "•";
+    color: var(--main-color);
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 10px 6px 0px;
+}
+
+.insurance-explain{
+    text-align: start;
+    line-height: 150%;
+    transform: translateX(-30%);
+}
+
+.insurance-explain:last-of-type{
+    transform: translate(-30%, 15%);
+}
+
+#main-text{
+    position: absolute;
+    height: 90vh; 
+    width: 34vw;
+    z-index: 10;
+    padding: 17vh 3vw;
+    right: 5vw;
+    background-color: rgba( 255, 255, 255, 0.5 );
+}
+
+.main-text{
+    font-size: 4.2rem;
+}
+
+#main-text hr{
+    background-color: #818181;
+    height: 1px;
+    width: 5vw;
+}
+
+.sub-text{
+    font-family: 'GowunBatang-Regular';
+}
