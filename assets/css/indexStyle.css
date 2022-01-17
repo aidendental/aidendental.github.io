@@ -260,12 +260,8 @@ hr{
 
 /***** 메인화면 모바일용 글자크기 조정****/
 @media screen and (max-width: 900px){
-  #category{
-    margin-top: 10vh;
-  }
-
   #treatment-subject-text{
-    font-size: 2.6rem;
+    font-size: 2.3rem;
   }
 
   .card{
@@ -277,7 +273,7 @@ hr{
   }
 
   .card section:first-of-type{
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .card span{
