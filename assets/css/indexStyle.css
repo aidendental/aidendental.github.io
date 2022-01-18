@@ -34,6 +34,13 @@ footer{
   height: 100vh;
 }
 
+#first-main-text{
+  font-size: 3rem;
+  line-height: 130%;
+  margin-bottom: 4rem;
+}
+
+
 /***** 메인화면 모바일용 글자크기 조정****/
 @media screen and (max-width: 900px){
   .main-text{
