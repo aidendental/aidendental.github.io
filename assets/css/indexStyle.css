@@ -53,7 +53,8 @@ footer{
 
 #doctor-wrapper{
   position: relative;
-  color: #818181;;
+  color: #818181;
+  text-align: right;
 }
 
 #doctor-image{
@@ -61,12 +62,13 @@ footer{
   z-index: 10;
   bottom: 0;
   width: 40rem;
-  right: 0;
+  left: 5vw;
   filter: drop-shadow(8rem 1.5rem 0 rgba(0,0,0,.05));
+  transform: scaleX(-1);
 }
 
 #doctor-image img:first-of-type{
-  transform: translate(-20%, 20%);
+  transform: translate(0%, 20%);
 }
   
 #main-text{
@@ -98,6 +100,7 @@ footer{
 hr{
   width: 5rem;
   background-color: #818181;
+  margin-left: auto;
 }
 
 #papers{
@@ -111,24 +114,29 @@ hr{
   position: absolute;
 }
 
+
+.paper-item:nth-of-type(1){
+  right: 0%;
+}
+
 .paper-item:nth-of-type(2){
-  left: 10%; 
+  right: 10%; 
   z-index: 1;
 }
 
 .paper-item:nth-of-type(3){
-  left: 20%;
+  right: 20%;
   z-index: 2;
 }
 
 .paper-item:nth-of-type(4){
-  left: 30%;
-  z-index: 2;
+  right: 30%;
+  z-index: 3;
 }
 
 .paper-item:nth-of-type(5){
-  left: 40%;
-  z-index: 2;
+  right: 40%;
+  z-index: 4;
 }
 
 #history{
