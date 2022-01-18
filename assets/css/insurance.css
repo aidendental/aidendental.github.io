@@ -57,10 +57,17 @@
 
 .insurance-explain span:first-of-type{
     font-size: 2rem;
-    line-height: 120%;
+    font-weight: 500;
+    border-bottom: 1px solid #cccccc;
 }
 
-.insurance-explain span:last-of-type{
+.insurance-explain div:last-of-type{
     font-size: 1.6rem;
     line-height: 120%;
+    margin-top: 1rem;
+}
+
+.checkbox{
+    width: 1.5rem;
+    height: 1.5rem;
 }
