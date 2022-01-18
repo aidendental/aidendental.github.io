@@ -2,16 +2,51 @@
     margin: 0 7rem 0 7rem;
 }
 
+.main-text{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #818181;
+    line-height: 130%;
+    margin-bottom: 4rem;
+   
+}
+
+.main-text strong{
+    font-weight: 600;
+}
+
+.sub-text{
+    font-size: 1.8rem;
+    color: black;
+}
+
 #pictograms{
     align-items: center;
     display: table;
-    margin: 3.5rem auto 7.5rem auto;
+    margin: 3.5rem auto 10rem auto;
 }
 
 .pictogram{
-    width: 11rem;
+    width: 13rem;
     display: inline-block;
     text-align: center;
     margin: 0 1.5rem 0 1.5rem;
     line-height: 150%;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+#promise{
+    font-size: 2.4rem;
+    margin: 4rem auto 4rem auto;
+    text-align: center;
+    width: fit-content;
+    color: var(--blue-gray);
+    font-weight: 400;
+    border-bottom: solid 3px var(--blue-gray);
+    line-height: 200%;
+}
+
+table{
+    margin-bottom: 10rem;
 }

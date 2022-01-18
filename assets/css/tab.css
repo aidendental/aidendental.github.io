@@ -10,7 +10,18 @@
     display: table;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 5rem;
+    background-color: white;
+    color: var(--blue-gray);
+    font-size: 2rem;
+    height: 7rem;
+    line-height: 7rem;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+}
+
+.tabs li{
+    padding: 0;
 }
 
 .tab{
@@ -22,5 +33,10 @@
 }
 
 .tab.active{
-    background-color: var(--background-color);
+    border-bottom: solid 3px #03c9c9;
+    color: #03c9c9;
+}
+
+body{
+    background-color: #F2FCFC;
 }
