@@ -32,7 +32,7 @@
 
   <!-- 네이버 지도 -->
   <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=bbvgfz9esz"></script>
-  <script type="text/javascript" src="/assets/js/animation.js"></script>
+  <!--<script type="text/javascript" src="/assets/js/animation.js"></script>-->
   <script type="text/javascript" src="assets/js/href.js"></script>
   <script type="text/javascript" src="assets/js/menu.js"></script>
 </head>
@@ -99,14 +99,14 @@
           </div>
           <div class="carousel-item">
             <section style="position: absolute; z-index: 10; top: 24vh; right: 5vw;">
-              <section class="main-text" id="first-main-text" style="color: #555555">
-                <section class="slider">
-                  <section class="slide-item1" style="margin-bottom: 2rem; font-weight: 500;">
-                    <span style="font-size: 5rem; line-height: 50%;">대학병원 <span class="text-dot">보철과 교수</span>
-                      출신</span>
+              <section class="main-text" id="first-main-text">
+                <section class="slider" style="transform: translate(0, 40%);">
+                  <section class="slide-item1" style="font-weight: 400;">
+                    <span style="font-size: 5rem; line-height: 150%; font-family: 'TmonMonsori';">
+                      대학병원 보철과 교수 출신</span>
                   </section>
                 </section>
-                <section class="slider">
+                <section class="slider underline">
                   <section class="slide-item1">대표원장이 직접 모든 진료를 책임집니다</section>
                 </section>
                 <!--
@@ -115,7 +115,7 @@
                 </section>
                 -->
               </section>
-              <section class="sub-text" style="font-size: 3.2rem; margin-left: 1%;">
+              <section class="sub-text" style="font-size: 3.2rem; margin-left: 1%; font-weight: 400;">
                 "98.3% 수술 성공률"<br>
                 "100,000건이 넘는 풍부한 임상경험"
               </section>
@@ -126,13 +126,14 @@
             <section style="position: absolute; z-index: 10; top: 28vh; left: 7vw; color: white">
               <section class="main-text" id="second-main-text" style="color: white;">
                 <section class="slider">
-                  <section class="slide-item2">AIDEN</section>
+                  <section class="slide-item2" style="color: #00F3FF; line-height: 130%; font-size: 2.5rem;">
+                    AIDEN의 철학</section>
                 </section>
                 <section class="slider">
-                  <section class="slide-item2"><strong>강하고, 단단하게.</strong></section>
+                  <section class="slide-item2" style="font-family: 'TmonMonsori';"><strong>강하고, 단단하게.</strong></section>
                 </section>
               </section>
-              <section class="sub-text">
+              <section class="sub-text" style="border-bottom: white 1px solid;">
                 편안하고 오래가는 치료를 고집합니다
               </section>
             </section>
@@ -143,21 +144,23 @@
     </article>
     <article id="doctor-wrapper">
       <section class="wrap" id="doctor-text">
+        <span
+          style="color: var(--main-color); letter-spacing: 0.45rem; border-bottom: solid var(--main-color) 1px;">AIDEN
+          DENTAL CLINIC</span>
         <section id="doctor">
           <span>대표원장</span>
           <span>이 동 인<br></span>
           <section>대학 병원 보철과 교수 출신 전문의</section>
         </section>
-        <section id="main-text">
+        <section id="main-text"
+          style="text-align: left; margin-left: 30vw; font-size: 5rem; font-family: 'UNPGothicKS'; margin-top: 20rem; line-height: 130%;">
           <div class="slider">
             <div class="slide-item3">&nbsp;"환자가 미소짓는,</div>
           </div>
           <div class="slider">
-            <div class="slide-item3">행복한 치과를 꿈꿉니다."</div>
+            <div class="slide-item3" style="transform: translate(4rem, 0);">행복한 치과를 꿈꿉니다."</div>
           </div>
         </section>
-        <hr>
-        <span>상이랑 임명장 설명 문구</span>
       </section>
       <section id="papers">
         <div class="paper-item">
@@ -180,17 +183,33 @@
         <img src="images/index/doctor2.png">
       </section>
       <section
-        style="position: absolute; width: 100%; top: 13vh; left: 40vw; height: 45vh; background-image: url('/images/index/aiden.png' ); background-position: 0% 50%; background-size: contain; background-repeat: no-repeat; opacity: 0.5;">
+        style="position: absolute; z-index: -1; width: 100%; top: 30vh; left: 68vw; height: 50vh; background-image: url('/images/index/aiden-graphic.png' ); background-position: 0% 50%; background-size: contain; background-repeat: no-repeat; opacity: 0.5;">
+      </section>
+      <section style="position: absolute; width: 10vw; z-index: 100; left: 3vw; bottom: 3vh;">
+        <img src="images/index/autograph.png">
+      </section>
+      <section style="position: absolute; left: 7vw; bottom: 2vh; z-index: 101; font-size: 1.4rem;">
+        대표원장 <strong>이동인</strong>
       </section>
     </article>
 
     <article>
       <section id="history" class="wrap">
-        보건복지부 인정 치과보철과 전문의<br>
-        대한치과보철학회 치과보철과 인정의<br>
-        <br>
-        前) 순천향대병원 치과보철과 조교수<br>
-        現) 순천향대병원 외래교수<br>
+        <span
+          style="font-size: 2rem; color: var(--main-color); letter-spacing: 0.45rem; border-bottom: solid var(--main-color) 1px;">AIDEN
+          DENTAL CLINIC</span>
+        <section id="doctor" style="font-weight: 500;">
+          <span>대표원장</span>
+          <span>이 동 인<br></span>
+          <section><strong>대학 병원 보철과 교수 출신 전문의</strong></section>
+        </section>
+        <strong>
+          보건복지부 인정 치과보철과 전문의<br>
+          대한치과보철학회 치과보철과 인정의<br>
+          <br>
+          前) 순천향대병원 치과보철과 조교수<br>
+          現) 순천향대병원 외래교수<br>
+        </strong>
         <br>
         치의학 석사 학위 취득<br>
         국군일동병원 치과보철과장<br>
@@ -212,13 +231,13 @@
 
     <!-- 진료과목 -->
     <article class="treatment-subject wrap">
-      <div id="category">진료과목 소개</div>
+      <div id="category" style="font-family: 'UNPGothicKS';">진료과목 소개</div>
       <section id="treatment-subject-text">
         <div class="slider">
-          <div class="slide-item6">강남에이든치과는 <strong>정확한 진단</strong>으로</div>
+          <div class="slide-item6">"강남에이든치과는 <strong>정확한 진단</strong>으로</div>
         </div>
         <div class="slider">
-          <div class="slide-item6"><strong>철저한 치료계획</strong> 수립을 원칙으로 합니다</div>
+          <div class="slide-item6"><strong>철저한 치료계획</strong> 수립을 원칙으로 합니다"</div>
         </div>
       </section>
       <section class="scrolling-wrapper-flexbox">
@@ -278,6 +297,11 @@
           </a>
         </div>
       </section>
+
+      <section
+        style="position: absolute; z-index: -1; width: 100%; top: 10vh; left:43vw; height: 20vh; background-image: url('/images/index/aiden.png' ); background-position: 0% 50%; background-size: contain; background-repeat: no-repeat; opacity: 0.5;">
+      </section>
+
     </article>
     <article id="interview">
       <video muted autoplay loop>

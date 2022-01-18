@@ -36,8 +36,7 @@ footer{
 
 #first-main-text{
   font-size: 3rem;
-  line-height: 130%;
-  margin-bottom: 4rem;
+  color: #555555;
 }
 
 
@@ -111,13 +110,13 @@ hr{
 }
 
 #papers{
-  margin: 15vh 2vw 1vh 2vw;
+  margin: 3vh 2vw 1vh 2vw;
   position: relative;
   display: flex;
 }
 
 .paper-item{
-  width: 25%;
+  width: 30%;
   position: absolute;
 }
 
@@ -148,7 +147,7 @@ hr{
 
 #history{
   margin-top: 4.5rem;
-  line-height: 180%;
+  line-height: 150%;
   font-size: 1.6rem;
 }
 
@@ -217,9 +216,15 @@ hr{
   
   #treatment-subject-text{
     padding: 2rem 0 2.2rem 0;
-    font-size: 3.5rem; 
-    line-height: 150%;
-    color: #151515;
+    font-size: 3rem; 
+    line-height: 160%;
+    color: #9B9B9B;
+    font-family: 'UNPGothicKS';
+  }
+
+  #treatment-subject-text strong{
+    color: black;
+    border-bottom: solid 2px black;
   }
   
   .scrolling-wrapper-flexbox {
@@ -259,6 +264,7 @@ hr{
     font-size: 2.5rem;
     margin: 2.5rem 0 2rem 0;
     color: #151515;
+    font-weight: 400;
   }
 
   .card span{
