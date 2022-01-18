@@ -1,18 +1,33 @@
+.main-text{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #818181;
+    line-height: 130%;
+    margin-bottom: 4rem;
+}
+
+.main-text strong{
+    font-weight: 600;
+}
+
+.sub-text{
+    font-size: 1.8rem;
+}
+
 #pictograms{
     align-items: center;
     display: table;
-    margin: 3.5rem auto 7.5rem auto;
+    margin: 5rem auto 7.5rem auto;
 }
 
 .pictogram{
-    width: 11rem;
+    width: 13rem;
     display: inline-block;
     text-align: center;
     margin: 0 1.5rem 0 1.5rem;
-}
-
-.pictogram img{
-    margin-bottom: 1rem;
+    line-height: 150%;
+    font-size: 2.4rem;
+    font-weight: 400;
 }
 
 .wrap{

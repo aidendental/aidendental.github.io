@@ -1,3 +1,23 @@
+.main-text{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #818181;
+    line-height: 130%;
+    margin-bottom: 3rem;
+}
+
+.main-text strong{
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 150%;
+}
+
+.sub-text{
+    font-size: 1.8rem;
+    color: black;
+    text-align: right;
+}
+
 #main-image{
     width: 30%;
     object-fit: cover;
@@ -52,28 +72,4 @@
 
 .insurance-explain:last-of-type{
     transform: translate(-30%, 15%);
-}
-
-#main-text{
-    position: absolute;
-    height: 90vh; 
-    width: 34vw;
-    z-index: 10;
-    padding: 17vh 3vw;
-    right: 5vw;
-    background-color: rgba( 255, 255, 255, 0.5 );
-}
-
-.main-text{
-    font-size: 4.2rem;
-}
-
-#main-text hr{
-    background-color: #818181;
-    height: 1px;
-    width: 5vw;
-}
-
-.sub-text{
-    font-family: 'GowunBatang-Regular';
 }

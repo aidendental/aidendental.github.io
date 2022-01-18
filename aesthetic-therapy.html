@@ -39,7 +39,26 @@
     </div>
     <div data-include-path="menu.html"></div>
 
-    <img src="images/aesthetic/main.JPG" class="main-img">
+    <article>
+        <section
+            style="position: absolute; z-index: 10; top: 20vh; right: 4vw;  background-color: rgba(255, 255, 255, 0.5); padding: 4rem;">
+            <section class="main-text">
+                <div
+                    style="font-size: 1.6rem; letter-spacing: 0.3rem; line-height: 2.4rem; width: 100%; text-align: right; color: var(--main-color);">
+                    <span style="border-bottom: solid 1px var(--main-color);">AIDEN DENTAL</span>
+                </div>
+                <section class="slider">
+                    <section class="slide-item1">미소에 자신감을 찾는 <strong>심미치료</strong></section>
+                </section>
+            </section>
+            <section class="sub-text">
+                강남에이든치과의 심미치료는 건강한 아름다움을 원칙으로<br>
+                미소의 아름다움을 찾아드립니다.<br>
+                개개인의 맞춤진료를 통해 사후관리까지 도와드리겠습니다.
+            </section>
+        </section>
+        <img src="images/aesthetic/main.JPG" class="main-img">
+    </article>
 
     <ul class="subText tabs">
         <li data-tab-target="#tab-1" class="active tab">라미네이트</li>
@@ -112,51 +131,56 @@
 
             <article class="wrap color-blue-gray">
                 <section class="case-title">
-                    에이든 라미네이트의 <strong>정갈함</strong>을 확인하세요
+                    "에이든 라미네이트의 <strong>정갈함</strong>을 확인하세요"
                 </section>
                 <section>
-                    <section class="case-num">Case 01</section>
+                    <section class="case-num">
+                        <span>Case <span class="upperline">01</span></span>
+                        <div style="font-size: 1.6rem; margin-left: auto; letter-spacing: 0.3rem; line-height: 2.4rem;">
+                            AIDEN DENTAL</div>
+                    </section>
+
                     <hr>
                     <section class="case">
                         <section>
                             <img src="images/aesthetic/laminate/case/1/before.JPG">
-                            <section class="align-center">BEFORE</section>
+                            <div class="align-center"><strong class="underline">내원 사유<br></strong>
+                                상악 측절치의 변색(좌측)<br>
+                                +왜소치(우측)<br></div>
                         </section>
+                        <div class="arrow">
+                            <img src="images/right-arrow.png">
+                        </div>
                         <section>
                             <img src="images/aesthetic/laminate/case/1/after.JPG">
-                            <section class="align-center">AFTER</section>
-                        </section>
-                        <section class="explain">
-                            <strong class="underline">내원 사유<br></strong>
-                            상악 측절치의 변색(좌측)<br>
-                            +왜소치(우측)<br>
-                            <br>
-                            <strong class="underline">치료 방안<br></strong>
-                            보철치료를 통하여 회복
+                            <div class="align-center"><strong class="underline">치료 방안<br></strong>
+                                보철치료를 통하여 회복</div>
                         </section>
                     </section>
                 </section>
 
                 <section>
-                    <section class="case-num">Case 02</section>
+                    <section class="case-num">
+                        <span>Case <span class="upperline">02</span></span>
+                        <div style="font-size: 1.6rem; margin-left: auto; letter-spacing: 0.3rem; line-height: 2.4rem;">
+                            AIDEN DENTAL</div>
+                    </section>
                     <hr>
                     <section class="case">
                         <section>
                             <img id="case2-before">
                             <!--이미지 크기 조절로 인해 whitening.css 파일에서 #case2-before 을 찾아주세요-->
-                            <section class="align-center">BEFORE</section>
+                            <div class="align-center"><strong class="underline">내원 사유<br></strong>
+                                전치부 치아 사이 공간(심미적 사유)<br></div>
                         </section>
+                        <div class="arrow">
+                            <img src="images/right-arrow.png">
+                        </div>
                         <section>
                             <img id="case2-after">
                             <!--이미지 크기 조절로 인해 whitening.css 파일에서 #case2-after 을 찾아주세요-->
-                            <section class="align-center">AFTER</section>
-                        </section>
-                        <section class="explain">
-                            <strong class="underline">내원 사유<br></strong>
-                            전치부 치아 사이 공간(심미적 사유)<br>
-                            <br>
-                            <strong class="underline">치료 방안<br></strong>
-                            라미네이트를 통한 치료
+                            <div class="align-center"><strong class="underline">치료 방안<br></strong>
+                                라미네이트를 통한 치료</div>
                         </section>
                     </section>
                 </section>
@@ -164,12 +188,13 @@
         </div>
         <div id="tab-2" data-tab-content>
             <article>
-                <section class="text24 colorMain margin-bottom-1rem align-center">
-                    하루 안에 빠르게
+                <section class="text24 color-blue-gray margin-bottom-1rem align-center">
+                    "하루 안에 빠르게"
                 </section>
-                <section class="text40 align-center color3">
+                <section class="text40 align-center color3" style="font-weight: 500;">
                     원데이 명품 치아 미백
                 </section>
+                <hr style="width: 5rem; background-color: var(--blue-gray); margin: 3rem auto;">
                 <section id="pictograms">
                     <section class="pictogram">
                         <img src="images/aesthetic/whitening/pictogram/1day.png">
@@ -230,20 +255,25 @@
 
             <article class="wrap color-blue-gray">
                 <section class="case-title">
-                    에이든 미백의 <strong>화사함</strong>을 확인하세요
+                    "에이든 미백의 <strong>화사함</strong>을 확인하세요"
                 </section>
-                <section class="case-num">Case 01</section>
+                <section class="case-num">
+                    <span>Case <span class="upperline">01</span></span>
+                    <div style="font-size: 1.6rem; margin-left: auto; letter-spacing: 0.3rem; line-height: 2.4rem;">
+                        AIDEN DENTAL</div>
+                </section>
                 <hr>
                 <section class="case">
                     <section>
                         <img src="images/aesthetic/whitening/case/before.jpg">
-                        <section class="align-center">BEFORE</section>
+                        <div class="align-center">BEFORE</div>
                     </section>
+                    <div class="arrow">
+                        <img src="images/right-arrow.png">
+                    </div>
                     <section>
                         <img src="images/aesthetic/whitening/case/after.jpg">
-                        <section class="align-center">AFTER</section>
-                    </section>
-                    <section>
+                        <div class="align-center">AFTER</div>
                     </section>
                 </section>
             </article>
