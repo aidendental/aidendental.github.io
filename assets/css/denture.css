@@ -96,11 +96,28 @@ th:first-child, td:first-child {
 }
 
 .characteristic{
-    padding-left: 2rem;
+    padding-left: 2.4rem;
     line-height: 200%;
     color: #777777;
+    font-size: 1.8rem;
+}
+
+.characteristic strong{
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.characteristic ul li:before{
+    content: "•";
+    color: var(--main-color);
+    padding: 0px 10px 6px 0px;
+}
+
+.characteristic li strong{
+    font-weight: 400;
+    font-size: 1.8rem;
 }
 
 .case-title{
-    margin-top: 8rem;
+    margin-top: 10rem;
 }
