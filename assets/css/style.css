@@ -94,17 +94,28 @@ strong{
 }
 
 #my-header div{
-  padding-top: 3rem;
+  padding-top: 3.5rem;
   margin-left: 2rem;
+  align-items: baseline;
+}
+
+#my-header ul{
+  line-height: 200%;
+  width: fit-content;
+  border-bottom: solid 1px #717275;
 }
 
 #my-header li{
     display: inline-block;
     top:50%;
-    font-size: 1.7rem;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 500;
     margin-right: 0.5rem;
-    color: #555555;
+    color: #151515;
+}
+
+#my-header li :hover{
+  color: #03c9c9;
 }
 
 @media screen and (max-width: 900px){
@@ -123,7 +134,7 @@ strong{
   position: fixed;
   z-index: 10;
   margin-left: 3rem;
-  margin-top: 8rem;
+  margin-top: 10rem;
 }
 
 .flags {
@@ -325,7 +336,7 @@ video{
   }
 
   .worth-explain{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
 }
