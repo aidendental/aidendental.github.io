@@ -262,9 +262,15 @@ hr{
 
   .card section:first-of-type{
     font-size: 2.5rem;
-    margin: 2.5rem 0 2rem 0;
+    margin: 1.5rem 0 1rem 0;
     color: #151515;
     font-weight: 400;
+    border-bottom: solid 1px #ececec;
+    line-height: 150%;
+  }
+
+  .card section:first-of-type strong{
+    font-weight: 600;
   }
 
   .card span{

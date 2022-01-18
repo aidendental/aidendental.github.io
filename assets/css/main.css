@@ -3936,7 +3936,7 @@ body.is-menu-visible #menu .inner {
 
 @media screen and (max-width: 900px){
   #menu{
-    padding: 3% 4%;
+    padding: 3rem;
   }
 
   .subject span{
