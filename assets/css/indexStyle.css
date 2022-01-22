@@ -422,7 +422,7 @@ hr{
     grid-template-columns: 38.9% 1fr;
   }
 
-  #location img{
+  #location-illustration{
     position: absolute;
     z-index: -1;
     width: 28vw;

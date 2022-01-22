@@ -124,6 +124,7 @@ strong{
 
 #my-header li :hover{
   color: #03c9c9;
+  border-bottom: 2px solid white;
 }
 
 @media screen and (max-width: 900px){
