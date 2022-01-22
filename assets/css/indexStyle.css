@@ -123,7 +123,7 @@ hr{
 }
 
 .paper-item{
-  width: 30%;
+  width: 25%;
   position: absolute;
 }
 
@@ -133,23 +133,18 @@ hr{
 }
 
 .paper-item:nth-of-type(2){
-  right: 10%; 
+  right: 13%; 
   z-index: 1;
 }
 
 .paper-item:nth-of-type(3){
-  right: 20%;
+  right: 26%;
   z-index: 2;
 }
 
 .paper-item:nth-of-type(4){
-  right: 30%;
+  right: 39%;
   z-index: 3;
-}
-
-.paper-item:nth-of-type(5){
-  right: 40%;
-  z-index: 4;
 }
 
 #history{
