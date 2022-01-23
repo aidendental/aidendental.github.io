@@ -38,6 +38,10 @@
     margin-bottom: 1.5rem;
 }
 
+.step-num span{
+    border-top: solid 3px var(--main-color);
+}
+
 .step-todo{
     font-size: 1.8rem;
     margin-bottom: 1.5rem;

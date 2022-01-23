@@ -67,7 +67,7 @@
 }
 
 .step-title span{
-    border-top: #03c9c9 2px solid; 
+    border-top: var(--point-color) 2px solid; 
     color: #9b9b9b; 
     margin-right: 1rem;
 }
@@ -156,11 +156,15 @@
     display: flex;
     justify-content: space-between;
     width: 50%;
+    margin: 0 auto 1rem auto;
+    text-align: center;
 }
 
 #second-line-arrow{
     display: flex;
     width: 50%;
+    margin: 0 auto 0 auto;
+    text-align: center;
 }
 
 #second-line-arrow .arrow{
