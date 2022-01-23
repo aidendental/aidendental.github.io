@@ -29,16 +29,10 @@ footer{
   display: none;
 }
 
-
+/****** 캐라솔 높이 커스텀 *****/
 .carousel-item{
   height: 100vh;
 }
-
-#first-main-text{
-  font-size: 3rem;
-  color: #555555;
-}
-
 
 /******** 캐라솔 밑 표시 커스텀 *******/
 .carousel-indicators li {
@@ -46,6 +40,53 @@ footer{
   background-color: #9b9b9b;
 }
 
+.main-text{
+  font-size: 5rem; 
+  line-height: 150%;
+  margin-bottom: 2vh;
+  color: #151515;
+}
+
+#first-main-text{
+  font-size: 3rem;
+  color: #555555;
+}
+
+#second-main-text{
+  color: white;
+}
+
+.main-text span{
+  font-size: 5rem; 
+  line-height: 150%; 
+  font-family: 'TmonMonsori';
+  font-weight: 400;
+}
+
+#first-main-text>.slider:first-of-type{
+  transform: translate(0, 40%);
+}
+
+#first-sub-text{
+  font-size: 3.2rem; 
+  margin-left: 1%; 
+  font-weight: 400;
+  line-height: 150%;
+}
+
+#second-main-text>.slider:first-of-type{
+  color: #00F3FF; 
+  line-height: 130%; 
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+#second-sub-text{
+  font-size: 2.5rem;
+  border-bottom: white 1px solid;
+  color: white;
+  line-height: 150%;
+}
 
 /***** 메인화면 모바일용 글자크기 조정****/
 @media screen and (max-width: 900px){
@@ -53,6 +94,9 @@ footer{
     font-size: 3rem;
   }
 
+  .main-text span{
+    font-size: 3rem;
+  }
   .sub-text{
     font-size: 1.6rem;
   }
@@ -85,16 +129,18 @@ footer{
 }
   
 #main-text{
-  margin-top: 3vh;
-  font-size: 3.8rem;
-  line-height: 140%;
   color: var(--main-color);
-  font-family: 'GowunBatang-Regular';
   letter-spacing: 0;
+  text-align: left; 
+  margin-left: 30vw; 
+  font-size: 5rem; 
+  font-family: 'UNPGothicKS'; 
+  margin-top: 20rem; 
+  line-height: 130%;
 }
   
 #doctor{
-  font-weight: 400;
+  font-weight: 500;
   font-size: 3.6rem;
   color: #151515;
   margin-bottom: 4rem;
@@ -159,6 +205,9 @@ hr{
 }
 
 #history{
+  background-image: url('/images/index/background.jpg'); 
+  background-position: 50% 50%; 
+  background-size: 100%;
   margin-top: 4.5rem;
   line-height: 150%;
   font-size: 1.6rem;
@@ -225,6 +274,7 @@ hr{
     line-height: 180%;
     font-weight: 400;
     width: fit-content;
+    font-family: 'UNPGothicKS';
   }
   
   #treatment-subject-text{

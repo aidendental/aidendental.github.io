@@ -1,20 +1,14 @@
 .main-text{
     font-size: 3rem;
-    font-weight: 500;
-    color: #818181;
-    line-height: 130%;
     margin-bottom: 3rem;
 }
 
 .main-text strong{
-    font-weight: 600;
     font-size: 4rem;
     line-height: 150%;
 }
 
 .sub-text{
-    font-size: 1.8rem;
-    color: black;
     text-align: right;
 }
 
