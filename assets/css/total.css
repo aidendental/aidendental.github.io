@@ -95,6 +95,22 @@
 
 .cavity-before-after td:first-child{
     width: 20%;
+    font-weight: 400;
+}
+
+.cavity-before-after tr:first-of-type td:first-of-type{
+    transform: translate(0,40%);
+    color: #9b9b9b;
+}
+
+.cavity-before-after tr:last-of-type td:first-of-type{
+    color: #333333;
+}
+
+.cavity-before-after td:first-child img{
+    transform: rotate(0.25turn); 
+    width: 3.5rem; 
+    object-fit: contain;
 }
 
 .cavity-before-after td:last-child{
