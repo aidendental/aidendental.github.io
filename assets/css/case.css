@@ -5,7 +5,7 @@
 }
 
 .case-title strong{
-    color: #03c9c9;
+    color: var(--point-color);
 }
 
 .case-num{
@@ -16,6 +16,10 @@
 
 .case-num div{
     color: #cccccc;
+    font-size: 1.6rem; 
+    margin-left: auto; 
+    letter-spacing: 0.3rem; 
+    line-height: 2.4rem;
 }
 
 .case{
@@ -37,24 +41,12 @@
     object-fit: cover;
 }
 
-.arrow{
+.case>.arrow{
     width: 3rem;
 }
 
-.arrow img{
+.case>.arrow img{
     object-fit: contain;
-}
-
-.explain{
-    color: #555555;
-    font-size: 1.8rem;
-    padding: 0 2rem 0 2rem;
-    align-self: center;
-}
-
-.explain>.underline{
-    color: var(--blue-gray);
-    border-bottom: 1px solid var(--blue-gray);
 }
 
 hr {
@@ -65,5 +57,5 @@ hr {
 }
 
 .upperline{
-    border-top: solid 3px #03c9c9;
+    border-top: solid 3px var(--point-color);
 }
