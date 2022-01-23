@@ -2,24 +2,6 @@
     margin: 0 7rem 0 7rem;
 }
 
-.main-text{
-    font-size: 4rem;
-    font-weight: 500;
-    color: #818181;
-    line-height: 130%;
-    margin-bottom: 4rem;
-   
-}
-
-.main-text strong{
-    font-weight: 600;
-}
-
-.sub-text{
-    font-size: 1.8rem;
-    color: black;
-}
-
 #pictograms{
     align-items: center;
     display: table;
