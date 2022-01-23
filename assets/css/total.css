@@ -66,6 +66,12 @@
     font-weight: 400;
 }
 
+.step-title span{
+    border-top: #03c9c9 2px solid; 
+    color: #9b9b9b; 
+    margin-right: 1rem;
+}
+
 .step-explain{
     font-size: 1.8rem;
     color: #555555;
