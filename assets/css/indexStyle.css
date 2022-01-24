@@ -264,6 +264,10 @@ hr{
     left: 0%;
     top: 28vh;
   }
+
+  #history{
+    font-size: 1.4rem;
+  }
 }
   
   /*************진료과목**************/
@@ -350,8 +354,11 @@ hr{
 
 /***** 메인화면 모바일용 글자크기 조정****/
 @media screen and (max-width: 900px){
+  #category{
+    margin-top: 10vh;
+  }
   #treatment-subject-text{
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
   .card{
@@ -359,7 +366,7 @@ hr{
   }
 
   .cardImg{
-    height: 20rem;
+    height: 16rem;
   }
 
   .card section:first-of-type{
@@ -370,15 +377,6 @@ hr{
     font-size: 1.4rem;
   }
 }
-
-  /************** 원장님 인터뷰 **********/
-  #interview{
-    background-color: #f7f7f7;
-  }
-
-  #interview video{
-    height: 75vh;
-  }
   
   /************** 소독 영상 **********/
   #roomVideoArticle{
@@ -553,6 +551,7 @@ hr{
 
     #information{
       font-size: 2.4rem;
+      margin-top: 0;
     }
 
     #address{
@@ -569,11 +568,14 @@ hr{
 
     #location img{
       width: 50%;
-      align-self: middle;
     }
 
     .pc{
       display: none;
+    }
+
+    #location-illustration{
+      bottom: -25vh;
     }
   }
 
