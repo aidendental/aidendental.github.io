@@ -31,6 +31,12 @@
   --point-color: #03c9c9;
 }
 
+@media screen and (max-width: 900px){
+  :root{
+    font-size: 40%;
+  }
+}
+
 body{
   font-weight: 300;
   color: #333333;
