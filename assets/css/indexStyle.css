@@ -350,6 +350,13 @@ hr{
     height: 28rem;
     overflow: hidden;
     border-radius: 1rem;
+    background-position: 50% 50%; 
+    background-size: cover;
+  }
+
+  .cardImg:nth-of-type(4){
+    background-position: 45% 50%; 
+    background-size: 140%;
   }
 
 /***** 메인화면 모바일용 글자크기 조정****/
@@ -359,6 +366,13 @@ hr{
   }
   .card{
     width: 70%;
+  }
+  .cardImg:nth-of-type(4){
+    background-size: cover;
+  }
+
+  .card section:first-of-type{
+    font-size: 2.3rem;
   }
 }
   
