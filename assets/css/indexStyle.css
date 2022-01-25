@@ -217,7 +217,7 @@ hr{
   #main-text{
     margin: 2rem auto 0 0;
     text-align: right;
-
+    font-size: 4.5rem;
   }
 
   #doctor-image{
@@ -516,7 +516,7 @@ hr{
     
     #map{
       width: 100%;
-      height: 40vh;
+      height: 35vh;
     }
 
     #address, #timeTable{
