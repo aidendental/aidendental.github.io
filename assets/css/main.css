@@ -3933,21 +3933,3 @@ body.is-menu-visible #menu .inner {
   height: 1px;
   width: 100%;
 }
-
-@media screen and (max-width: 900px){
-  #menu{
-    padding: 3rem;
-  }
-
-  .subject span{
-    font-size: 1.4rem;
-  }  
-
-  .subject li{
-    font-size: 1.6rem;
-  }
-
-  .subject strong{
-    font-size: 1.8rem;
-  }
-}
