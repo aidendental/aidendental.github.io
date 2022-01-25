@@ -206,10 +206,15 @@ hr{
 #history{
   background-image: url('/images/index/background.jpg'); 
   background-position: 50% 50%; 
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-top: 4.5rem;
   line-height: 150%;
   font-size: 1.6rem;
+}
+
+#history .aiden{
+  font-size: 2rem;
 }
 
 /***** 메인화면 모바일용 글자크기 조정****/
