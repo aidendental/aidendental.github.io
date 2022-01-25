@@ -113,6 +113,10 @@ footer{
   text-align: right;
 }
 
+#doctor-wrapper .aiden{
+  font-size: 1.85rem;
+}
+
 #doctor-image{
   position: absolute;
   z-index: 10;
@@ -240,6 +244,7 @@ hr{
 
   .paper-item{
     width: 40%;
+    height: 18vh;
   }
 
   .paper-item:nth-of-type(1){
@@ -248,20 +253,20 @@ hr{
 
   .paper-item:nth-of-type(2){
     right: 0%;
-    top: 7vh;
+    top: 10vh;
   }
 
   .paper-item:nth-of-type(3){
     right: 0%;
-    top: 14vh;
+    top: 20vh;
   }
   .paper-item:nth-of-type(4){
     right: 0%;
-    top: 21vh;
+    top: 30vh;
   }
   .paper-item:nth-of-type(5){
     right: 0%;
-    top: 28vh;
+    top: 40vh;
   }
 }
   
