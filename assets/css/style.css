@@ -135,6 +135,10 @@ strong{
 }
 
 @media screen and (max-width: 900px){
+  #my-header li{
+    font-size: 1.2rem;
+  }
+
   #my-header{
     height: 8rem;
     align-items: center;
