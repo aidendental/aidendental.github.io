@@ -350,11 +350,14 @@ hr{
     height: 28rem;
     overflow: hidden;
     border-radius: 1rem;
+  }
+
+  .card:not(:nth-of-type(4)) .cardImg{
     background-position: 50% 50%; 
     background-size: cover;
   }
 
-  .cardImg:nth-of-type(4){
+  .card:nth-of-type(4) .cardImg{
     background-position: 45% 50%; 
     background-size: 140%;
   }
