@@ -10,7 +10,7 @@ window.addEventListener("load", function () {
   function fMainIntersectionCallback(entries, observer) {
     entries.forEach((entry) => {
       var slideItems = document.querySelectorAll(".slide-item1");
-      var subText = document.querySelector(".sub-text");
+      var subText = document.querySelector("#first-sub-text");
 
       if (entry.intersectionRatio >= 1) {
         // 화면에 보일 때 글자 움직이기
@@ -47,7 +47,7 @@ window.addEventListener("load", function () {
   function sMainIntersectionCallback(entries, observer) {
     entries.forEach((entry) => {
       var slideItems = document.querySelectorAll(".slide-item2");
-      var subText = document.querySelectorAll(".sub-text")[1];
+      var subText = document.querySelector("#second-sub-text");
 
       if (entry.intersectionRatio >= 1) {
         // 화면에 보일 때 글자 움직이기
@@ -78,63 +78,79 @@ window.addEventListener("load", function () {
   var secondMainText = document.querySelector(secondMainTextID);
   secondMainTextObserver.observe(secondMainText);
 
-  /*** 의사 프로필 애니메이션 효과 
+  /*** 의사 프로필 애니메이션 효과 */
 
   let doctorID = "#main-text";
   function doctorIntersectionCallback(entries, observer) {
     entries.forEach((entry) => {
       var slideItems = document.querySelectorAll(".slide-item3");
       var doctor = document.querySelector("#doctor");
-      var history = document.querySelector("#history");
-      var box = document.querySelector("#box");
 
       if (entry.intersectionRatio >= 1) {
-        // 화면에 보일 때 글자 움직이기
-
         // 환자가 미소짓는,행복한~
         slideItems.forEach((target) => {
+          target.style.opacity = 0;
+          target.style.setProperty("animation-delay", "1s");
           target.classList.add("animate__animated", "animate__slideHidden");
+
+          self.setTimeout(() => {
+            target.style.opacity = 1;
+          }, 1100);
         });
 
         // 대표원장 이동인 대학병원 보철과~
-        doctor.style.opacity = 0;
-        doctor.style.setProperty("animation-delay", "1s");
         doctor.classList.add("animate__animated", "animate__slideInRight");
-        self.setTimeout(() => {
-          doctor.style.opacity = 1;
-        }, 1750);
-
-        // 이력
-        history.style.opacity = 0;
-        history.style.setProperty("animation-delay", "1.75s");
-        history.classList.add("animate__animated", "animate__fadeIn");
-        self.setTimeout(() => {
-          history.style.opacity = 1;
-        }, 2500);
-
-        // 이력 뒤 푸른색 박스
-        box.classList.add("animate__animated", "animate__slideHidden");
       } else {
         // 화면에 안 보일 때 글자 효과 초기화
         slideItems.forEach((target) => {
           target.classList.remove("animate__animated", "animate__slideHidden");
         });
         doctor.classList.remove("animate__animated", "animate__slideInRight");
-        history.classList.remove("animate__animated", "animate__fadeIn");
-        box.classList.remove("animate__animated", "animate__slideHidden");
       }
     });
   }
 
-  var doctortObserver = new IntersectionObserver(
+  var doctorObserver = new IntersectionObserver(
     doctorIntersectionCallback,
     intersectionOptions
   );
 
   var doctor = document.querySelector(doctorID);
-  doctortObserver.observe(doctor);
+  doctorObserver.observe(doctor);
 
-  */
+  /*** 원장님 이력 */
+  function historyIntersectionCallback(entries, observer) {
+    entries.forEach((entry) => {
+      var doctor = document.querySelectorAll("#doctor")[1];
+      var history = document.querySelector("#history-div");
+
+      if (entry.intersectionRatio >= 1) {
+        // 화면에 보일 때 글자 움직이기
+        // 대표원장 이동인 대학병원 보철과~
+        doctor.classList.add("animate__animated", "animate__slideInRight");
+
+        // 이력
+        history.style.opacity = 0;
+        history.style.setProperty("animation-delay", "1s");
+        history.classList.add("animate__animated", "animate__fadeIn");
+        self.setTimeout(() => {
+          history.style.opacity = 1;
+        }, 1100);
+      } else {
+        // 화면에 안 보일 때 글자 효과 초기화
+        doctor.classList.remove("animate__animated", "animate__slideInRight");
+        history.classList.remove("animate__animated", "animate__fadeIn");
+      }
+    });
+  }
+
+  var historyObserver = new IntersectionObserver(
+    historyIntersectionCallback,
+    intersectionOptions
+  );
+
+  var history = document.querySelector("#history");
+  historyObserver.observe(history);
 
   /*** 진료과목 애니메이션 효과 */
 
