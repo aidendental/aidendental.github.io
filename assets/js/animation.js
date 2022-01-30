@@ -292,7 +292,7 @@ window.addEventListener("load", function () {
   });
 
   arrows[1].addEventListener("click", function () {
-    count -= 2;
+    if (count > 1) count -= 2;
     cardHolder.scrollTo({
       left: count * scrollWidth,
       top: 0,
