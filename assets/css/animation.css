@@ -58,7 +58,7 @@
 
 @keyframes slideHidden {
     from{
-        transform: translate(0, -100%);
+        transform: translate(0, 100%);
     }
     to{
         transform: translate(0, 0);
@@ -80,17 +80,4 @@
 
 .animate__fadeIn{
     animation: fadeIn 1s;
-}
-
-
-@keyframes fullSlideInUp {
-    from {
-        transform: translate(0, 100%);
-    }
-    to {
-        transform: translate(0, 0);
-    }
-}
-.animate__fullSlideInUp {
-    animation: fullSlideInUp 1s;
 }

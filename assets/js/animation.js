@@ -113,7 +113,7 @@ window.addEventListener("load", function () {
         }, 2500);
 
         // 이력 뒤 푸른색 박스
-        box.classList.add("animate__animated", "animate__fullSlideInUp");
+        box.classList.add("animate__animated", "animate__slideHidden");
       } else {
         // 화면에 안 보일 때 글자 효과 초기화
         slideItems.forEach((target) => {
@@ -121,7 +121,7 @@ window.addEventListener("load", function () {
         });
         doctor.classList.remove("animate__animated", "animate__slideInRight");
         history.classList.remove("animate__animated", "animate__fadeIn");
-        box.classList.remove("animate__animated", "animate__fullSlideInUp");
+        box.classList.remove("animate__animated", "animate__slideHidden");
       }
     });
   }
@@ -145,15 +145,12 @@ window.addEventListener("load", function () {
       if (entry.intersectionRatio >= 1) {
         // 화면에 보일 때 글자 움직이기
         targets.forEach((target) => {
-          target.classList.add("animate__animated", "animate__fullSlideInUp");
+          target.classList.add("animate__animated", "animate__slideHidden");
         });
       } else {
         // 화면에 안 보일 때 글자 효과 초기화
         targets.forEach((target) => {
-          target.classList.remove(
-            "animate__animated",
-            "animate__fullSlideInUp"
-          );
+          target.classList.remove("animate__animated", "animate__slideHidden");
         });
       }
     });
@@ -246,7 +243,7 @@ window.addEventListener("load", function () {
       if (entry.intersectionRatio >= 1) {
         // 화면에 보일 때 글자 움직이기
         slideItems.forEach((target) => {
-          target.classList.add("animate__animated", "animate__fullSlideInUp");
+          target.classList.add("animate__animated", "animate__slideHidden");
         });
         points.forEach((target) => {
           target.style.opacity = 0;
@@ -261,10 +258,7 @@ window.addEventListener("load", function () {
       } else {
         // 화면에 안 보일 때 글자 효과 초기화
         slideItems.forEach((target) => {
-          target.classList.remove(
-            "animate__animated",
-            "animate__fullSlideInUp"
-          );
+          target.classList.remove("animate__animated", "animate__slideHidden");
         });
         points.forEach((target) => {
           target.classList.remove("animate__animated", "animate__fadeIn");
@@ -293,7 +287,7 @@ window.addEventListener("load", function () {
       if (entry.intersectionRatio >= 1) {
         // 화면에 보일 때 글자 움직이기
         slideItems.forEach((target) => {
-          target.classList.add("animate__animated", "animate__fullSlideInUp");
+          target.classList.add("animate__animated", "animate__slideHidden");
         });
 
         subText.style.opacity = 0;
@@ -312,10 +306,7 @@ window.addEventListener("load", function () {
       } else {
         // 화면에 안 보일 때 글자 효과 초기화
         slideItems.forEach((target) => {
-          target.classList.remove(
-            "animate__animated",
-            "animate__fullSlideInUp"
-          );
+          target.classList.remove("animate__animated", "animate__slideHidden");
         });
         subText.classList.remove("animate__animated", "animate__slideInRight");
         information.classList.remove("animate__animated", "animate__fadeIn");
