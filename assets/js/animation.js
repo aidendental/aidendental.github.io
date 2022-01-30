@@ -394,4 +394,31 @@ window.addEventListener("load", function () {
 
   var location = document.querySelector(locationID);
   locationObserver.observe(location);
+
+  var links = document.querySelectorAll(".links > li");
+  var body = document.querySelector("#main");
+
+  links[1].addEventListener("click", function () {
+    body.scrollTo({
+      left: 0,
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  });
+
+  links[2].addEventListener("click", function () {
+    body.scrollTo({
+      left: 0,
+      top: window.innerHeight * 5,
+      behavior: "smooth",
+    });
+  });
+
+  links[3].addEventListener("click", function () {
+    body.scrollTo({
+      left: 0,
+      top: window.innerHeight * 5,
+      behavior: "smooth",
+    });
+  });
 });
