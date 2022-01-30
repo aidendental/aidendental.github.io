@@ -25,6 +25,21 @@
     animation: slideInRight 0.75s;
 }
 
+
+@keyframes slideInLeft {
+    from{
+        transform: translate(-5%, 0);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+.animate__slideInLeft {
+    animation: slideInLeft 0.75s;
+}
+
 @keyframes pulseForSmile {
     0%{
         background-size: 140%;

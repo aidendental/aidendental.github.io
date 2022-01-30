@@ -85,6 +85,7 @@ window.addEventListener("load", function () {
     entries.forEach((entry) => {
       var slideItems = document.querySelectorAll(".slide-item3");
       var doctor = document.querySelector("#doctor");
+      var papers = document.querySelectorAll(".paper-item");
 
       if (entry.intersectionRatio >= 1) {
         // 환자가 미소짓는,행복한~
@@ -100,12 +101,34 @@ window.addEventListener("load", function () {
 
         // 대표원장 이동인 대학병원 보철과~
         doctor.classList.add("animate__animated", "animate__slideInRight");
+
+        papers.forEach((paper) => {
+          paper.style.opacity = 0;
+        });
+        // 증명서들
+        self.setTimeout(() => {
+          var i = 0;
+          papers.forEach((paper) => {
+            paper.style.setProperty(
+              "animation-delay",
+              "0." + (8 - i * 2) + "s"
+            );
+            paper.classList.add("animate__animated", "animate__slideInLeft");
+            ++i;
+            setTimeout(() => {
+              paper.style.opacity = 1;
+            }, (8 - i * 2) * 100 + 750);
+          });
+        }, 2000);
       } else {
         // 화면에 안 보일 때 글자 효과 초기화
         slideItems.forEach((target) => {
           target.classList.remove("animate__animated", "animate__slideHidden");
         });
         doctor.classList.remove("animate__animated", "animate__slideInRight");
+        papers.forEach((paper) => {
+          paper.classList.remove("animate__animated", "animate__slideInLeft");
+        });
       }
     });
   }
