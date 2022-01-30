@@ -26,9 +26,3 @@ table td:first-of-type{
     grid-template-columns: 40% 1fr;
     text-align: right;
 }
-
-@media screen and (max-width: 900px) {
-    table section{
-        display: block;
-    }
-}
