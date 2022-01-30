@@ -273,6 +273,40 @@ window.addEventListener("load", function () {
     }
   });
 
+  var arrows = document.querySelectorAll(".arrow");
+
+  arrows[0].addEventListener("click", function () {
+    cardHolder.scrollTo({
+      left: count * scrollWidth,
+      top: 0,
+      behavior: "smooth",
+    });
+    if (count < cards.length - 1) count++;
+    for (var i = 0; i < cardNum; ++i) {
+      cards[i].classList.remove(
+        "animate__animated",
+        "animate__pulse",
+        "animate__pulseForSmile"
+      );
+    }
+  });
+
+  arrows[1].addEventListener("click", function () {
+    count -= 2;
+    cardHolder.scrollTo({
+      left: count * scrollWidth,
+      top: 0,
+      behavior: "smooth",
+    });
+    for (var i = 0; i < cardNum; ++i) {
+      cards[i].classList.remove(
+        "animate__animated",
+        "animate__pulse",
+        "animate__pulseForSmile"
+      );
+    }
+  });
+
   /*** 소독 영상 에니메이션 */
   function roomVideoIntersectionCallback(entries, observer) {
     entries.forEach((entry) => {
