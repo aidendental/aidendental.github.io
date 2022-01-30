@@ -3815,14 +3815,19 @@ body.is-preload #banner > .inner {
 
 #menu ul.links > li {
   padding: 0;
-}
-
-#menu ul.links > li > a:not(.button) {
-  border: 0;
-  display: block;
   font-size: 2.4rem;
   line-height: 150%;
+  border: 0;
+  display: block;
   text-decoration: none;
+}
+
+#menu ul.links > li:hover{
+  cursor: pointer;
+}
+
+#menu a:hover{
+  color: black;
 }
 
 #menu ul.links > li > .button {
