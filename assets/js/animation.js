@@ -421,4 +421,13 @@ window.addEventListener("load", function () {
       behavior: "smooth",
     });
   });
+
+  var header = document.querySelector("#my-header");
+  body.addEventListener("scroll", function () {
+    if (body.scrollTop > window.innerHeight) {
+      header.style.setProperty("background-color", "white");
+    } else {
+      header.style.setProperty("background-color", "transparent");
+    }
+  });
 });

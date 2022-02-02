@@ -29,4 +29,25 @@ window.addEventListener("load", function () {
     js.src = "https://developers.kakao.com/sdk/js/kakao.channel.min.js";
     fjs.parentNode.insertBefore(js, fjs);
   })(document, "script", "kakao-js-sdk");
+
+  var header = document.querySelector("#my-header");
+  var ratio;
+  if (isMobile) {
+    ratio = 0.6;
+  } else {
+    ratio = 0.9;
+  }
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > window.innerHeight * ratio) {
+      header.style.setProperty("background-color", "white");
+    } else {
+      header.style.setProperty("background-color", "transparent");
+    }
+  });
 });
+
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
+}
