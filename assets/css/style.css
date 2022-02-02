@@ -137,11 +137,13 @@ strong{
 @media screen and (max-width: 900px){
   #my-header li{
     font-size: 1.2rem;
+    margin-right: 0.3rem;
   }
 
   #my-header{
     height: 8rem;
     align-items: center;
+    padding-left: 1.5rem;
   }
 }
 
