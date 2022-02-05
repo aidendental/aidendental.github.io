@@ -15,9 +15,6 @@
     }, 100);
   });
 
-  // Fix: Enable IE-only tweaks.
-  if (browser.name == "ie" || browser.name == "edge") $body.addClass("is-ie");
-
   // Menu.
   $window.on("load", function () {
     var $menu = $("#menu"),
