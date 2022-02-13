@@ -93,6 +93,7 @@ th:first-child, td:first-child {
     line-height: 200%;
     color: #777777;
     font-size: 1.8rem;
+    margin: 0 auto 0 auto;
 }
 
 .characteristic strong{
